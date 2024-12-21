@@ -93,7 +93,7 @@ class Ui_MainWindow(object):
         self.Title.setObjectName(u"Title")
         self.Title.setGeometry(QRect(60, 20, 120, 30))
         self.Title.setMaximumSize(QSize(16777215, 30))
-        self.Title.setStyleSheet(u"font: 600 12pt \"Segoe UI Semibold\";\n"
+        self.Title.setStyleSheet(u"font: 600 12pt \"Segoe UI\";\n"
 "color: rgb(255, 255, 255);")
         self.Title.setAlignment(Qt.AlignCenter)
 
@@ -119,7 +119,7 @@ class Ui_MainWindow(object):
         self.ToggleBotton.setMinimumSize(QSize(0, 45))
         self.ToggleBotton.setMaximumSize(QSize(16777215, 16777215))
         font = QFont()
-        font.setFamilies([u"Nirmala UI"])
+        font.setFamilies([u"Segoe UI"])
         font.setPointSize(12)
         font.setBold(True)
         font.setItalic(False)
@@ -140,11 +140,11 @@ class Ui_MainWindow(object):
 "text-align: center;\n"
 "padding-left: 0px;\n"
 "color: rgb(255, 255, 255);\n"
-"font: 600 12pt \"Nirmala UI\";\n"
+"font: 600 12pt \"Segoe UI\";\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
-"background-color:rgba(182, 185, 255, 0.8);\n"
+"background-color:rgb(187, 222, 214);\n"
 "}")
         self.ToggleBotton.setAutoDefault(False)
         self.ToggleBotton.setFlat(False)
@@ -179,11 +179,11 @@ class Ui_MainWindow(object):
 "text-align: center;\n"
 "padding-left: 0px;\n"
 "color: rgb(255, 255, 255);\n"
-"font: 600 12pt \"Nirmala UI\";\n"
+"font: 600 12pt \"Segoe UI\";\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
-"background-color: rgba(182, 185, 255, 0.8);\n"
+"background-color: rgb(187, 222, 214);\n"
 "}")
 
         self.verticalLayout_5.addWidget(self.src_file_button)
@@ -448,14 +448,14 @@ class Ui_MainWindow(object):
         self.Class_num.setMinimumSize(QSize(0, 30))
         self.Class_num.setMaximumSize(QSize(16777215, 30))
         font3 = QFont()
-        font3.setFamilies([u"Microsoft YaHei UI"])
+        font3.setFamilies([u"Segoe UI"])
         font3.setPointSize(17)
         font3.setBold(False)
         font3.setItalic(False)
         font3.setUnderline(False)
         self.Class_num.setFont(font3)
         self.Class_num.setStyleSheet(u"color: rgb(255, 255, 255);\n"
-"font: 17pt \"Microsoft YaHei UI\";")
+"font: 600 14pt \"Segoe UI\";")
         self.Class_num.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_8.addWidget(self.Class_num, 0, Qt.AlignTop)
@@ -531,7 +531,7 @@ class Ui_MainWindow(object):
         self.Target_num.setMaximumSize(QSize(16777215, 30))
         self.Target_num.setFont(font3)
         self.Target_num.setStyleSheet(u"color: rgb(255, 255, 255);\n"
-"font: 17pt \"Microsoft YaHei UI\";")
+"font: 600 14pt \"Segoe UI\";")
         self.Target_num.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_10.addWidget(self.Target_num, 0, Qt.AlignTop)
@@ -609,7 +609,7 @@ class Ui_MainWindow(object):
         self.fps_label.setMaximumSize(QSize(16777215, 30))
         self.fps_label.setFont(font3)
         self.fps_label.setStyleSheet(u"color: rgb(255, 255, 255);\n"
-"font: 17pt \"Microsoft YaHei UI\";")
+"font: 600 14pt \"Segoe UI\";")
         self.fps_label.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_12.addWidget(self.fps_label, 0, Qt.AlignTop)
@@ -686,14 +686,14 @@ class Ui_MainWindow(object):
         self.Model_name.setMinimumSize(QSize(0, 30))
         self.Model_name.setMaximumSize(QSize(16777215, 30))
         font4 = QFont()
-        font4.setFamilies([u"Microsoft YaHei UI"])
+        font4.setFamilies([u"Segoe UI"])
         font4.setPointSize(15)
         font4.setBold(False)
         font4.setItalic(False)
         font4.setUnderline(False)
         self.Model_name.setFont(font4)
         self.Model_name.setStyleSheet(u"color: rgb(255, 255, 255);\n"
-"font: 15pt \"Microsoft YaHei UI\";\n"
+"font: 600 14pt \"Segoe UI\";\n"
 "")
         self.Model_name.setAlignment(Qt.AlignCenter)
 
@@ -783,7 +783,7 @@ class Ui_MainWindow(object):
         self.progress_bar.setMinimumSize(QSize(0, 20))
         self.progress_bar.setMaximumSize(QSize(16777215, 20))
         self.progress_bar.setStyleSheet(u"QProgressBar{ \n"
-"font: 700 10pt \"Microsoft YaHei UI\";\n"
+"font: 700 10pt \"Segoe UI\";\n"
 "color: rgb(253, 143, 134); \n"
 "text-align:center; \n"
 "border:3px solid rgb(255, 255, 255);\n"
@@ -869,7 +869,7 @@ class Ui_MainWindow(object):
         self.ToggleBotton_6.setMinimumSize(QSize(0, 30))
         self.ToggleBotton_6.setMaximumSize(QSize(16777215, 30))
         font5 = QFont()
-        font5.setFamilies([u"Nirmala UI"])
+        font5.setFamilies([u"Segoe UI"])
         font5.setPointSize(13)
         font5.setBold(True)
         font5.setItalic(False)
@@ -891,7 +891,7 @@ class Ui_MainWindow(object):
 "padding-left: 40px;\n"
 "padding-bottom: 2px;\n"
 "color: rgb(255, 255, 255);\n"
-"font: 700 13pt \"Nirmala UI\";\n"
+"font: 700 13pt \"Segoe UI\";\n"
 "}")
         icon1 = QIcon()
         iconThemeName = u"zoom-out"
@@ -1004,7 +1004,7 @@ class Ui_MainWindow(object):
 "padding-left: 40px;\n"
 "padding-bottom: 4px;\n"
 "color: rgb(255, 255, 255);\n"
-"font: 700 13pt \"Nirmala UI\";\n"
+"font: 700 13pt \"Segoe UI\";\n"
 "}")
         self.ToggleBotton_2.setIcon(icon1)
         self.ToggleBotton_2.setAutoDefault(False)
@@ -1126,7 +1126,7 @@ class Ui_MainWindow(object):
 "padding-left: 40px;\n"
 "padding-bottom: 4px;\n"
 "color: rgb(255, 255, 255);\n"
-"font: 700 13pt \"Nirmala UI\";\n"
+"font: 700 13pt \"Segoe UI\";\n"
 "}")
         self.ToggleBotton_3.setIcon(icon1)
         self.ToggleBotton_3.setAutoDefault(False)
@@ -1248,7 +1248,7 @@ class Ui_MainWindow(object):
 "padding-left: 40px;\n"
 "padding-bottom: 2px;\n"
 "color: rgb(255, 255, 255);\n"
-"font: 700 13pt \"Nirmala UI\";\n"
+"font: 700 13pt \"Segoe UI\";\n"
 "}")
         self.ToggleBotton_4.setIcon(icon1)
         self.ToggleBotton_4.setAutoDefault(False)
@@ -1367,7 +1367,7 @@ class Ui_MainWindow(object):
 "padding-left: 40px;\n"
 "padding-bottom: 2px;\n"
 "color: rgb(255, 255, 255);\n"
-"font: 700 13pt \"Nirmala UI\";\n"
+"font: 700 13pt \"Segoe UI\";\n"
 "}")
         self.ToggleBotton_5.setIcon(icon1)
         self.ToggleBotton_5.setAutoDefault(False)
@@ -1380,7 +1380,7 @@ class Ui_MainWindow(object):
         self.save_res_button.setCursor(QCursor(Qt.PointingHandCursor))
         self.save_res_button.setStyleSheet(u"QCheckBox {\n"
 "color: rgb(255, 255, 255);\n"
-"font: 590 10pt \"Nirmala UI\";\n"
+"font: 590 10pt \"Segoe UI\";\n"
 "        }\n"
 "\n"
 "        QCheckBox::indicator {\n"
@@ -1406,7 +1406,7 @@ class Ui_MainWindow(object):
         self.save_txt_button.setCursor(QCursor(Qt.PointingHandCursor))
         self.save_txt_button.setStyleSheet(u"QCheckBox {\n"
 "color: rgb(255, 255, 255);\n"
-"font: 590 10pt \"Nirmala UI\";\n"
+"font: 590 10pt \"Segoe UI\";\n"
 "        }\n"
 "\n"
 "        QCheckBox::indicator {\n"

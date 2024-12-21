@@ -206,7 +206,7 @@ color: rgba(255, 255, 255, 255);</string>
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">font: 600 12pt &quot;Segoe UI Semibold&quot;;
+              <string notr="true">font: 600 12pt &quot;Segoe UI&quot;;
 color: rgb(255, 255, 255);</string>
              </property>
              <property name="text">
@@ -276,7 +276,7 @@ color: rgb(255, 255, 255);</string>
                </property>
                <property name="font">
                 <font>
-                 <family>Nirmala UI</family>
+                 <family>Segoe UI</family>
                  <pointsize>12</pointsize>
                  <italic>false</italic>
                  <bold>true</bold>
@@ -311,11 +311,11 @@ border-left: 23px solid transparent;
 text-align: center;
 padding-left: 0px;
 color: rgb(255, 255, 255);
-font: 600 12pt &quot;Nirmala UI&quot;;
+font: 600 12pt &quot;Segoe UI&quot;;
 }
 
 QPushButton:hover{
-background-color:rgba(182, 185, 255, 0.8);
+background-color:rgb(187, 222, 214);
 }</string>
                </property>
                <property name="text">
@@ -400,11 +400,11 @@ border-left: 23px solid transparent;
 text-align: center;
 padding-left: 0px;
 color: rgb(255, 255, 255);
-font: 600 12pt &quot;Nirmala UI&quot;;
+font: 600 12pt &quot;Segoe UI&quot;;
 }
 
 QPushButton:hover{
-background-color: rgba(182, 185, 255, 0.8);
+background-color: rgb(187, 222, 214);
 }</string>
                </property>
                <property name="text">
@@ -434,7 +434,7 @@ border-left: 23px solid transparent;
 text-align: center;
 padding-left: 0px;
 color: rgba(255, 255, 255, 199);
-font: 700 12pt &quot;Nirmala UI&quot;;
+font: 700 12pt &quot;Segoe UI&quot;;
 }
 
 QPushButton:hover{
@@ -471,7 +471,7 @@ border-left: 23px solid transparent;
 text-align: center;
 padding-left: 0px;
 color: rgba(255, 255, 255, 199);
-font: 700 12pt &quot;Nirmala UI&quot;;
+font: 700 12pt &quot;Segoe UI&quot;;
 }
 
 QPushButton:hover{
@@ -1071,7 +1071,7 @@ font: 600 14pt &quot;Segoe UI&quot;;</string>
                           </property>
                           <property name="font">
                            <font>
-                            <family>Microsoft YaHei UI</family>
+                            <family>Segoe UI</family>
                             <pointsize>17</pointsize>
                             <italic>false</italic>
                             <bold>false</bold>
@@ -1080,7 +1080,7 @@ font: 600 14pt &quot;Segoe UI&quot;;</string>
                           </property>
                           <property name="styleSheet">
                            <string notr="true">color: rgb(255, 255, 255);
-font: 17pt &quot;Microsoft YaHei UI&quot;;</string>
+font: 600 14pt &quot;Segoe UI&quot;;</string>
                           </property>
                           <property name="text">
                            <string/>
@@ -1265,7 +1265,7 @@ font: 600 14pt &quot;Segoe UI&quot;;</string>
                           </property>
                           <property name="font">
                            <font>
-                            <family>Microsoft YaHei UI</family>
+                            <family>Segoe UI</family>
                             <pointsize>17</pointsize>
                             <italic>false</italic>
                             <bold>false</bold>
@@ -1274,7 +1274,7 @@ font: 600 14pt &quot;Segoe UI&quot;;</string>
                           </property>
                           <property name="styleSheet">
                            <string notr="true">color: rgb(255, 255, 255);
-font: 17pt &quot;Microsoft YaHei UI&quot;;</string>
+font: 600 14pt &quot;Segoe UI&quot;;</string>
                           </property>
                           <property name="text">
                            <string/>
@@ -1465,7 +1465,7 @@ font: 600 14pt &quot;Segoe UI&quot;;</string>
                           </property>
                           <property name="font">
                            <font>
-                            <family>Microsoft YaHei UI</family>
+                            <family>Segoe UI</family>
                             <pointsize>17</pointsize>
                             <italic>false</italic>
                             <bold>false</bold>
@@ -1474,7 +1474,7 @@ font: 600 14pt &quot;Segoe UI&quot;;</string>
                           </property>
                           <property name="styleSheet">
                            <string notr="true">color: rgb(255, 255, 255);
-font: 17pt &quot;Microsoft YaHei UI&quot;;</string>
+font: 600 14pt &quot;Segoe UI&quot;;</string>
                           </property>
                           <property name="text">
                            <string/>
@@ -1665,7 +1665,7 @@ font: 600 14pt &quot;Segoe UI&quot;;</string>
                           </property>
                           <property name="font">
                            <font>
-                            <family>Microsoft YaHei UI</family>
+                            <family>Segoe UI</family>
                             <pointsize>15</pointsize>
                             <italic>false</italic>
                             <bold>false</bold>
@@ -1674,7 +1674,7 @@ font: 600 14pt &quot;Segoe UI&quot;;</string>
                           </property>
                           <property name="styleSheet">
                            <string notr="true">color: rgb(255, 255, 255);
-font: 15pt &quot;Microsoft YaHei UI&quot;;
+font: 600 14pt &quot;Segoe UI&quot;;
 </string>
                           </property>
                           <property name="text">
@@ -1879,7 +1879,7 @@ QPushButton:hover{
                     </property>
                     <property name="styleSheet">
                      <string notr="true">QProgressBar{ 
-font: 700 10pt &quot;Microsoft YaHei UI&quot;;
+font: 700 10pt &quot;Segoe UI&quot;;
 color: rgb(253, 143, 134); 
 text-align:center; 
 border:3px solid rgb(255, 255, 255);
@@ -2050,7 +2050,7 @@ border-radius:15px;
                      </property>
                      <property name="font">
                       <font>
-                       <family>Nirmala UI</family>
+                       <family>Segoe UI</family>
                        <pointsize>13</pointsize>
                        <italic>false</italic>
                        <bold>true</bold>
@@ -2086,7 +2086,7 @@ text-align: left;
 padding-left: 40px;
 padding-bottom: 2px;
 color: rgb(255, 255, 255);
-font: 700 13pt &quot;Nirmala UI&quot;;
+font: 700 13pt &quot;Segoe UI&quot;;
 }</string>
                      </property>
                      <property name="text">
@@ -2231,7 +2231,7 @@ border-radius:15px;
                      </property>
                      <property name="font">
                       <font>
-                       <family>Nirmala UI</family>
+                       <family>Segoe UI</family>
                        <pointsize>13</pointsize>
                        <italic>false</italic>
                        <bold>true</bold>
@@ -2267,7 +2267,7 @@ text-align: left;
 padding-left: 40px;
 padding-bottom: 4px;
 color: rgb(255, 255, 255);
-font: 700 13pt &quot;Nirmala UI&quot;;
+font: 700 13pt &quot;Segoe UI&quot;;
 }</string>
                      </property>
                      <property name="text">
@@ -2459,7 +2459,7 @@ border-radius:15px;
                      </property>
                      <property name="font">
                       <font>
-                       <family>Nirmala UI</family>
+                       <family>Segoe UI</family>
                        <pointsize>13</pointsize>
                        <italic>false</italic>
                        <bold>true</bold>
@@ -2495,7 +2495,7 @@ text-align: left;
 padding-left: 40px;
 padding-bottom: 4px;
 color: rgb(255, 255, 255);
-font: 700 13pt &quot;Nirmala UI&quot;;
+font: 700 13pt &quot;Segoe UI&quot;;
 }</string>
                      </property>
                      <property name="text">
@@ -2687,7 +2687,7 @@ border-radius:15px;
                      </property>
                      <property name="font">
                       <font>
-                       <family>Nirmala UI</family>
+                       <family>Segoe UI</family>
                        <pointsize>13</pointsize>
                        <italic>false</italic>
                        <bold>true</bold>
@@ -2723,7 +2723,7 @@ text-align: left;
 padding-left: 40px;
 padding-bottom: 2px;
 color: rgb(255, 255, 255);
-font: 700 13pt &quot;Nirmala UI&quot;;
+font: 700 13pt &quot;Segoe UI&quot;;
 }</string>
                      </property>
                      <property name="text">
@@ -2915,7 +2915,7 @@ border-radius:15px;
                      </property>
                      <property name="font">
                       <font>
-                       <family>Nirmala UI</family>
+                       <family>Segoe UI</family>
                        <pointsize>13</pointsize>
                        <italic>false</italic>
                        <bold>true</bold>
@@ -2951,7 +2951,7 @@ text-align: left;
 padding-left: 40px;
 padding-bottom: 2px;
 color: rgb(255, 255, 255);
-font: 700 13pt &quot;Nirmala UI&quot;;
+font: 700 13pt &quot;Segoe UI&quot;;
 }</string>
                      </property>
                      <property name="text">
@@ -2980,7 +2980,7 @@ font: 700 13pt &quot;Nirmala UI&quot;;
                      <property name="styleSheet">
                       <string notr="true">QCheckBox {
 color: rgb(255, 255, 255);
-font: 590 10pt &quot;Nirmala UI&quot;;
+font: 590 10pt &quot;Segoe UI&quot;;
         }
 
         QCheckBox::indicator {
@@ -3012,7 +3012,7 @@ padding-left: 10px;
                      <property name="styleSheet">
                       <string notr="true">QCheckBox {
 color: rgb(255, 255, 255);
-font: 590 10pt &quot;Nirmala UI&quot;;
+font: 590 10pt &quot;Segoe UI&quot;;
         }
 
         QCheckBox::indicator {
