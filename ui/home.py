@@ -50,7 +50,7 @@ class Ui_MainWindow(object):
         self.LeftMenuBg.setMinimumSize(QSize(68, 0))
         self.LeftMenuBg.setMaximumSize(QSize(68, 16777215))
         self.LeftMenuBg.setStyleSheet(u"QFrame#LeftMenuBg{\n"
-"	background-color: rgba(255, 255, 255,0);\n"
+"	background-color: rgba(255, 255, 255, 0);\n"
 "border:0px solid red;\n"
 "border-radius:0px\n"
 "}")
@@ -65,7 +65,6 @@ class Ui_MainWindow(object):
         self.TopLogoInfo.setEnabled(True)
         self.TopLogoInfo.setMinimumSize(QSize(0, 70))
         self.TopLogoInfo.setMaximumSize(QSize(16777215, 70))
-        self.TopLogoInfo.setFrameShape(QFrame.StyledPanel)
         self.TopLogoInfo.setFrameShadow(QFrame.Raised)
         self.logo = QWidget(self.TopLogoInfo)
         self.logo.setObjectName(u"logo")
@@ -89,12 +88,13 @@ class Ui_MainWindow(object):
         self.Author.setMaximumSize(QSize(60, 30))
         self.Author.setStyleSheet(u"font: italic 11pt \"Segoe UI\";\n"
 "color: rgba(255, 255, 255, 255);")
+        self.Author.setAlignment(Qt.AlignCenter)
         self.Title = QLabel(self.TopLogoInfo)
         self.Title.setObjectName(u"Title")
-        self.Title.setGeometry(QRect(60, 10, 121, 20))
+        self.Title.setGeometry(QRect(60, 20, 120, 30))
         self.Title.setMaximumSize(QSize(16777215, 30))
-        self.Title.setStyleSheet(u"font: 600 13pt \"Segoe UI Semibold\";\n"
-"color: rgba(255, 255, 255, 255);")
+        self.Title.setStyleSheet(u"font: 600 12pt \"Segoe UI Semibold\";\n"
+"color: rgb(255, 255, 255);")
         self.Title.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_2.addWidget(self.TopLogoInfo)
@@ -255,7 +255,6 @@ class Ui_MainWindow(object):
         self.VersionInfo.setObjectName(u"VersionInfo")
         self.VersionInfo.setMinimumSize(QSize(200, 10))
         self.VersionInfo.setMaximumSize(QSize(200, 15))
-        self.VersionInfo.setFrameShape(QFrame.StyledPanel)
         self.VersionInfo.setFrameShadow(QFrame.Raised)
         self.verticalLayout_3 = QVBoxLayout(self.VersionInfo)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
@@ -277,11 +276,10 @@ class Ui_MainWindow(object):
         self.ContentBox = QFrame(self.Main_QF)
         self.ContentBox.setObjectName(u"ContentBox")
         self.ContentBox.setStyleSheet(u"QFrame#ContentBox{\n"
-"	background-color: rgb(245, 249, 254);\n"
+"	background-color: rgb(255, 255, 255);\n"
 "border:0px solid red;\n"
 "border-radius:0px\n"
 "}")
-        self.ContentBox.setFrameShape(QFrame.StyledPanel)
         self.ContentBox.setFrameShadow(QFrame.Raised)
         self.verticalLayout_6 = QVBoxLayout(self.ContentBox)
         self.verticalLayout_6.setSpacing(0)
@@ -294,7 +292,6 @@ class Ui_MainWindow(object):
         self.top.setStyleSheet(u"QFrame#top{\n"
 "background-color: rgba(255, 255, 255,0);\n"
 "}")
-        self.top.setFrameShape(QFrame.StyledPanel)
         self.top.setFrameShadow(QFrame.Raised)
         self.horizontalLayout = QHBoxLayout(self.top)
         self.horizontalLayout.setSpacing(0)
@@ -304,7 +301,7 @@ class Ui_MainWindow(object):
         self.explain_title.setObjectName(u"explain_title")
         self.explain_title.setMinimumSize(QSize(0, 30))
         self.explain_title.setMaximumSize(QSize(16777215, 30))
-        self.explain_title.setStyleSheet(u"font: 600  15pt \"Segoe UI\";margin-left: 110px;")
+        self.explain_title.setStyleSheet(u"font: 600  15pt \"Segoe UI\";margin-left: 112px;")
         self.explain_title.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout.addWidget(self.explain_title)
@@ -313,7 +310,6 @@ class Ui_MainWindow(object):
         self.buttons_sf.setObjectName(u"buttons_sf")
         self.buttons_sf.setMinimumSize(QSize(120, 30))
         self.buttons_sf.setMaximumSize(QSize(120, 30))
-        self.buttons_sf.setFrameShape(QFrame.StyledPanel)
         self.buttons_sf.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_2 = QHBoxLayout(self.buttons_sf)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")

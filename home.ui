@@ -72,7 +72,7 @@ border-radius:0px
          </property>
          <property name="styleSheet">
           <string notr="true">QFrame#LeftMenuBg{
-	background-color: rgba(255, 255, 255,0);
+	background-color: rgba(255, 255, 255, 0);
 border:0px solid red;
 border-radius:0px
 }</string>
@@ -113,9 +113,9 @@ border-radius:0px
               <height>70</height>
              </size>
             </property>
-            <property name="frameShape">
+            <!-- <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
-            </property>
+            </property> -->
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
@@ -183,20 +183,20 @@ border-radius:10px</string>
               <string notr="true">font: italic 11pt &quot;Segoe UI&quot;;
 color: rgba(255, 255, 255, 255);</string>
              </property>
-             <!-- <property name="text">
-              <string>By javier</string>
+             <property name="text">
+              <!-- <string>By javier</string> -->
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
-             </property> -->
+             </property>
             </widget>
             <widget class="QLabel" name="Title">
              <property name="geometry">
               <rect>
                <x>60</x>
-               <y>10</y>
-               <width>121</width>
-               <height>20</height>
+               <y>20</y>
+               <width>120</width>
+               <height>30</height>
               </rect>
              </property>
              <property name="maximumSize">
@@ -206,8 +206,8 @@ color: rgba(255, 255, 255, 255);</string>
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">font: 600 13pt &quot;Segoe UI Semibold&quot;;
-color: rgba(255, 255, 255, 255);</string>
+              <string notr="true">font: 600 12pt &quot;Segoe UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
              </property>
              <property name="text">
               <string>Heaven Eye</string>
@@ -513,9 +513,9 @@ background-color: rgba(114, 129, 214, 59);
               <height>15</height>
              </size>
             </property>
-            <property name="frameShape">
+            <!-- <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
-            </property>
+            </property> -->
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
@@ -553,14 +553,14 @@ color: rgba(255, 255, 255, 199);</string>
         <widget class="QFrame" name="ContentBox">
          <property name="styleSheet">
           <string notr="true">QFrame#ContentBox{
-	background-color: rgb(245, 249, 254);
+	background-color: rgb(255, 255, 255);
 border:0px solid red;
 border-radius:0px
 }</string>
          </property>
-         <property name="frameShape">
+         <!-- <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
-         </property>
+         </property> -->
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
@@ -599,9 +599,9 @@ border-radius:0px
 background-color: rgba(255, 255, 255,0);
 }</string>
             </property>
-            <property name="frameShape">
+            <!-- <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
-            </property>
+            </property> -->
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
@@ -633,7 +633,7 @@ background-color: rgba(255, 255, 255,0);
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">font: 600  15pt &quot;Segoe UI&quot;;margin-left: 110px;</string>
+                <string notr="true">font: 600  15pt &quot;Segoe UI&quot;;margin-left: 112px;</string>
                </property>
                <property name="text">
                 <string>Heaven Eye</string>
@@ -657,9 +657,9 @@ background-color: rgba(255, 255, 255,0);
                  <height>30</height>
                 </size>
                </property>
-               <property name="frameShape">
+               <!-- <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
-               </property>
+               </property> -->
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
                </property>
