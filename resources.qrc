@@ -16,7 +16,7 @@
     <file>img/menu.png</file>
     <file>img/file.png</file>
     <file>img/cam.png</file>
-    <file>img/logo.png</file>
+    <file>img/logo.jpg</file>
     <file>img/RTSP.png</file>
   </qresource>
 </RCC>

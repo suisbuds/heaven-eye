@@ -591,7 +591,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.save_txt_button.setCheckState(Qt.CheckState(save_txt)) 
         self.yolo_predict.save_txt = (False if save_txt==0 else True )
         self.run_button.setChecked(False)  
-        self.show_status("Welcome~")
+        # self.show_status("Welcome~")
 
     # Terminate button and associated state
     def stop(self):
