@@ -315,7 +315,7 @@ font: 600 12pt &quot;Nirmala UI&quot;;
 }
 
 QPushButton:hover{
-background-color:rgba(114, 129, 214, 50);
+background-color:rgba(182, 185, 255, 0.7);
 }</string>
                </property>
                <property name="text">
@@ -404,7 +404,7 @@ font: 600 12pt &quot;Nirmala UI&quot;;
 }
 
 QPushButton:hover{
-background-color: rgba(114, 129, 214, 50);
+background-color: rgba(182, 185, 255, 0.7);
 }</string>
                </property>
                <property name="text">
@@ -533,7 +533,7 @@ background-color: rgba(114, 129, 214, 59);
               <widget class="QLabel" name="VersionLabel">
                <property name="styleSheet">
                 <string notr="true">font: 900 italic 10pt &quot;Segoe UI&quot;;
-color: rgba(255, 255, 255, 199);</string>
+color: rgba(255, 255, 255, 255);</string>
                </property>
                <!-- <property name="text">
                 <string>Version: 2.0</string>
@@ -995,7 +995,7 @@ border: 1px outset rgb(98, 91, 213);
                            </font>
                           </property>
                           <property name="styleSheet">
-                           <string notr="true">color: rgba(255, 255, 255,210);
+                           <string notr="true">color: rgb(255, 255, 255);
 padding-left:12px;
 font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
                           </property>
@@ -1022,7 +1022,7 @@ font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
                         </size>
                        </property>
                        <property name="styleSheet">
-                        <string notr="true">background-color: rgba(255, 255, 255, 89);</string>
+                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                        </property>
                        <property name="orientation">
                         <enum>Qt::Horizontal</enum>
@@ -1189,7 +1189,7 @@ border: 1px outset rgb(252, 194, 149)
                            </font>
                           </property>
                           <property name="styleSheet">
-                           <string notr="true">color: rgba(255, 255, 255,210);
+                           <string notr="true">color: rgb(255, 255, 255);
 padding-left:12px;
 font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
                           </property>
@@ -1216,7 +1216,7 @@ font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
                         </size>
                        </property>
                        <property name="styleSheet">
-                        <string notr="true">background-color: rgba(255, 255, 255, 89);</string>
+                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                        </property>
                        <property name="orientation">
                         <enum>Qt::Horizontal</enum>
@@ -1383,7 +1383,7 @@ border: 1px outset rgb(153, 117, 219)
                            </font>
                           </property>
                           <property name="styleSheet">
-                           <string notr="true">color: rgba(255, 255, 255,210);
+                           <string notr="true">color: rgb(255, 255, 255);
 padding-left:12px;
 font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
                           </property>
@@ -1416,7 +1416,7 @@ font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
                         </size>
                        </property>
                        <property name="styleSheet">
-                        <string notr="true">background-color: rgba(255, 255, 255, 89);</string>
+                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                        </property>
                        <property name="orientation">
                         <enum>Qt::Horizontal</enum>
@@ -1583,7 +1583,7 @@ border: 1px outset rgb(72, 158, 204)
                            </font>
                           </property>
                           <property name="styleSheet">
-                           <string notr="true">color: rgba(255, 255, 255,210);
+                           <string notr="true">color: rgb(255, 255, 255);
 padding-left:12px;
 font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
                           </property>
@@ -1616,7 +1616,7 @@ font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
                         </size>
                        </property>
                        <property name="styleSheet">
-                        <string notr="true">background-color: rgba(255, 255, 255, 89);</string>
+                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                        </property>
                        <property name="orientation">
                         <enum>Qt::Horizontal</enum>
@@ -1985,7 +1985,7 @@ border-bottom-left-radius:30px;
                   <property name="styleSheet">
                    <string notr="true">padding-left: 0px;
 padding-bottom: 2px;
-color: rgba(255, 255, 255, 240);
+color: rgb(255, 255, 255);
 font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="text">
@@ -2012,7 +2012,7 @@ font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">QWidget#Model_QF_2{
-border:2px solid rgba(255, 255, 255, 70);
+border:2px solid rgb(255, 255, 255);
 border-radius:15px;
 }</string>
                   </property>
@@ -2086,7 +2086,7 @@ border-left: 20px solid transparent;
 text-align: left;
 padding-left: 40px;
 padding-bottom: 2px;
-color: rgba(255, 255, 255, 199);
+color: rgb(255, 255, 255);
 font: 700 13pt &quot;Nirmala UI&quot;;
 }</string>
                      </property>
@@ -2205,7 +2205,7 @@ QComboBox {
                   </property>
                   <property name="styleSheet">
                    <string notr="true">QFrame#IOU_QF{
-border:2px solid rgba(255, 255, 255, 70);
+border:2px solid rgb(255, 255, 255);
 border-radius:15px;
 }</string>
                   </property>
@@ -2267,7 +2267,7 @@ border-left: 20px solid transparent;
 text-align: left;
 padding-left: 40px;
 padding-bottom: 4px;
-color: rgba(255, 255, 255, 199);
+color: rgb(255, 255, 255);
 font: 700 13pt &quot;Nirmala UI&quot;;
 }</string>
                      </property>
@@ -2433,7 +2433,7 @@ border-radius: 5px;
                   </property>
                   <property name="styleSheet">
                    <string notr="true">QFrame#Conf_QF{
-border:2px solid rgba(255, 255, 255, 70);
+border:2px solid rgb(255, 255, 255);
 border-radius:15px;
 }</string>
                   </property>
@@ -2495,7 +2495,7 @@ border-left: 20px solid transparent;
 text-align: left;
 padding-left: 40px;
 padding-bottom: 4px;
-color: rgba(255, 255, 255, 199);
+color: rgb(255, 255, 255);
 font: 700 13pt &quot;Nirmala UI&quot;;
 }</string>
                      </property>
@@ -2661,7 +2661,7 @@ border-radius: 5px;
                   </property>
                   <property name="styleSheet">
                    <string notr="true">QFrame#Delay_QF{
-border:2px solid rgba(255, 255, 255, 70);
+border:2px solid rgb(255, 255, 255);
 border-radius:15px;
 }</string>
                   </property>
@@ -2723,7 +2723,7 @@ border-left: 20px solid transparent;
 text-align: left;
 padding-left: 40px;
 padding-bottom: 2px;
-color: rgba(255, 255, 255, 199);
+color: rgb(255, 255, 255);
 font: 700 13pt &quot;Nirmala UI&quot;;
 }</string>
                      </property>
@@ -2877,7 +2877,7 @@ border-radius: 5px;
                   </property>
                   <property name="styleSheet">
                    <string notr="true">QFrame#Save_QF{
-border:2px solid rgba(255, 255, 255, 70);
+border:2px solid rgb(255, 255, 255);
 border-radius:15px;
 }</string>
                   </property>
@@ -2951,7 +2951,7 @@ border-left: 20px solid transparent;
 text-align: left;
 padding-left: 40px;
 padding-bottom: 2px;
-color: rgba(255, 255, 255, 199);
+color: rgb(255, 255, 255);
 font: 700 13pt &quot;Nirmala UI&quot;;
 }</string>
                      </property>
@@ -2980,7 +2980,7 @@ font: 700 13pt &quot;Nirmala UI&quot;;
                      </property>
                      <property name="styleSheet">
                       <string notr="true">QCheckBox {
-color: rgba(255, 255, 255, 199);
+color: rgb(255, 255, 255);
 font: 590 10pt &quot;Nirmala UI&quot;;
         }
 
@@ -3012,7 +3012,7 @@ padding-left: 10px;
                      </property>
                      <property name="styleSheet">
                       <string notr="true">QCheckBox {
-color: rgba(255, 255, 255, 199);
+color: rgb(255, 255, 255);
 font: 590 10pt &quot;Nirmala UI&quot;;
         }
 

@@ -144,7 +144,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:hover{\n"
-"background-color:rgba(114, 129, 214, 50);\n"
+"background-color:rgba(182, 185, 255, 0.7);\n"
 "}")
         self.ToggleBotton.setAutoDefault(False)
         self.ToggleBotton.setFlat(False)
@@ -183,7 +183,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:hover{\n"
-"background-color: rgba(114, 129, 214, 50);\n"
+"background-color: rgba(182, 185, 255, 0.7);\n"
 "}")
 
         self.verticalLayout_5.addWidget(self.src_file_button)
@@ -207,7 +207,7 @@ class Ui_MainWindow(object):
         self.VersionLabel = QLabel(self.VersionInfo)
         self.VersionLabel.setObjectName(u"VersionLabel")
         self.VersionLabel.setStyleSheet(u"font: 900 italic 10pt \"Segoe UI\";\n"
-"color: rgba(255, 255, 255, 199);")
+"color: rgba(255, 255, 255, 255);")
         self.VersionLabel.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_3.addWidget(self.VersionLabel)
@@ -415,7 +415,7 @@ class Ui_MainWindow(object):
         font2.setBold(True)
         font2.setItalic(True)
         self.label_5.setFont(font2)
-        self.label_5.setStyleSheet(u"color: rgba(255, 255, 255,210);\n"
+        self.label_5.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "padding-left:12px;\n"
 "font: 700 italic 16pt \"Segoe UI\";")
         self.label_5.setAlignment(Qt.AlignCenter)
@@ -429,7 +429,7 @@ class Ui_MainWindow(object):
         self.line_2 = QFrame(self.Class_QF)
         self.line_2.setObjectName(u"line_2")
         self.line_2.setMaximumSize(QSize(16777215, 1))
-        self.line_2.setStyleSheet(u"background-color: rgba(255, 255, 255, 89);")
+        self.line_2.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.line_2.setFrameShape(QFrame.HLine)
         self.line_2.setFrameShadow(QFrame.Sunken)
 
@@ -497,7 +497,7 @@ class Ui_MainWindow(object):
         self.label_6.setObjectName(u"label_6")
         self.label_6.setMaximumSize(QSize(16777215, 30))
         self.label_6.setFont(font2)
-        self.label_6.setStyleSheet(u"color: rgba(255, 255, 255,210);\n"
+        self.label_6.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "padding-left:12px;\n"
 "font: 700 italic 16pt \"Segoe UI\";")
         self.label_6.setAlignment(Qt.AlignCenter)
@@ -511,7 +511,7 @@ class Ui_MainWindow(object):
         self.line_3 = QFrame(self.Target_QF)
         self.line_3.setObjectName(u"line_3")
         self.line_3.setMaximumSize(QSize(16777215, 1))
-        self.line_3.setStyleSheet(u"background-color: rgba(255, 255, 255, 89);")
+        self.line_3.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.line_3.setFrameShape(QFrame.HLine)
         self.line_3.setFrameShadow(QFrame.Sunken)
 
@@ -573,7 +573,7 @@ class Ui_MainWindow(object):
         self.label_7.setObjectName(u"label_7")
         self.label_7.setMaximumSize(QSize(16777215, 30))
         self.label_7.setFont(font2)
-        self.label_7.setStyleSheet(u"color: rgba(255, 255, 255,210);\n"
+        self.label_7.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "padding-left:12px;\n"
 "font: 700 italic 16pt \"Segoe UI\";")
         self.label_7.setMidLineWidth(-1)
@@ -589,7 +589,7 @@ class Ui_MainWindow(object):
         self.line_4 = QFrame(self.Fps_QF)
         self.line_4.setObjectName(u"line_4")
         self.line_4.setMaximumSize(QSize(16777215, 1))
-        self.line_4.setStyleSheet(u"background-color: rgba(255, 255, 255, 89);")
+        self.line_4.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.line_4.setFrameShape(QFrame.HLine)
         self.line_4.setFrameShadow(QFrame.Sunken)
 
@@ -651,7 +651,7 @@ class Ui_MainWindow(object):
         self.label_8.setObjectName(u"label_8")
         self.label_8.setMaximumSize(QSize(16777215, 30))
         self.label_8.setFont(font2)
-        self.label_8.setStyleSheet(u"color: rgba(255, 255, 255,210);\n"
+        self.label_8.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "padding-left:12px;\n"
 "font: 700 italic 16pt \"Segoe UI\";")
         self.label_8.setMidLineWidth(-1)
@@ -667,7 +667,7 @@ class Ui_MainWindow(object):
         self.line_5 = QFrame(self.Model_QF)
         self.line_5.setObjectName(u"line_5")
         self.line_5.setMaximumSize(QSize(16777215, 1))
-        self.line_5.setStyleSheet(u"background-color: rgba(255, 255, 255, 89);")
+        self.line_5.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.line_5.setFrameShape(QFrame.HLine)
         self.line_5.setFrameShadow(QFrame.Sunken)
 
@@ -845,7 +845,7 @@ class Ui_MainWindow(object):
         self.label.setObjectName(u"label")
         self.label.setStyleSheet(u"padding-left: 0px;\n"
 "padding-bottom: 2px;\n"
-"color: rgba(255, 255, 255, 240);\n"
+"color: rgb(255, 255, 255);\n"
 "font: 700 italic 16pt \"Segoe UI\";")
         self.label.setAlignment(Qt.AlignCenter)
 
@@ -856,7 +856,7 @@ class Ui_MainWindow(object):
         self.Model_QF_2.setMinimumSize(QSize(190, 90))
         self.Model_QF_2.setMaximumSize(QSize(190, 90))
         self.Model_QF_2.setStyleSheet(u"QWidget#Model_QF_2{\n"
-"border:2px solid rgba(255, 255, 255, 70);\n"
+"border:2px solid rgb(255, 255, 255);\n"
 "border-radius:15px;\n"
 "}")
         self.verticalLayout_21 = QVBoxLayout(self.Model_QF_2)
@@ -890,7 +890,7 @@ class Ui_MainWindow(object):
 "text-align: left;\n"
 "padding-left: 40px;\n"
 "padding-bottom: 2px;\n"
-"color: rgba(255, 255, 255, 199);\n"
+"color: rgb(255, 255, 255);\n"
 "font: 700 13pt \"Nirmala UI\";\n"
 "}")
         icon1 = QIcon()
@@ -975,7 +975,7 @@ class Ui_MainWindow(object):
         self.IOU_QF.setMinimumSize(QSize(190, 90))
         self.IOU_QF.setMaximumSize(QSize(190, 90))
         self.IOU_QF.setStyleSheet(u"QFrame#IOU_QF{\n"
-"border:2px solid rgba(255, 255, 255, 70);\n"
+"border:2px solid rgb(255, 255, 255);\n"
 "border-radius:15px;\n"
 "}")
         self.verticalLayout_15 = QVBoxLayout(self.IOU_QF)
@@ -1003,7 +1003,7 @@ class Ui_MainWindow(object):
 "text-align: left;\n"
 "padding-left: 40px;\n"
 "padding-bottom: 4px;\n"
-"color: rgba(255, 255, 255, 199);\n"
+"color: rgb(255, 255, 255);\n"
 "font: 700 13pt \"Nirmala UI\";\n"
 "}")
         self.ToggleBotton_2.setIcon(icon1)
@@ -1097,7 +1097,7 @@ class Ui_MainWindow(object):
         self.Conf_QF.setMinimumSize(QSize(190, 90))
         self.Conf_QF.setMaximumSize(QSize(190, 90))
         self.Conf_QF.setStyleSheet(u"QFrame#Conf_QF{\n"
-"border:2px solid rgba(255, 255, 255, 70);\n"
+"border:2px solid rgb(255, 255, 255);\n"
 "border-radius:15px;\n"
 "}")
         self.verticalLayout_18 = QVBoxLayout(self.Conf_QF)
@@ -1125,7 +1125,7 @@ class Ui_MainWindow(object):
 "text-align: left;\n"
 "padding-left: 40px;\n"
 "padding-bottom: 4px;\n"
-"color: rgba(255, 255, 255, 199);\n"
+"color: rgb(255, 255, 255);\n"
 "font: 700 13pt \"Nirmala UI\";\n"
 "}")
         self.ToggleBotton_3.setIcon(icon1)
@@ -1219,7 +1219,7 @@ class Ui_MainWindow(object):
         self.Delay_QF.setMinimumSize(QSize(190, 90))
         self.Delay_QF.setMaximumSize(QSize(190, 90))
         self.Delay_QF.setStyleSheet(u"QFrame#Delay_QF{\n"
-"border:2px solid rgba(255, 255, 255, 70);\n"
+"border:2px solid rgb(255, 255, 255);\n"
 "border-radius:15px;\n"
 "}")
         self.verticalLayout_19 = QVBoxLayout(self.Delay_QF)
@@ -1247,7 +1247,7 @@ class Ui_MainWindow(object):
 "text-align: left;\n"
 "padding-left: 40px;\n"
 "padding-bottom: 2px;\n"
-"color: rgba(255, 255, 255, 199);\n"
+"color: rgb(255, 255, 255);\n"
 "font: 700 13pt \"Nirmala UI\";\n"
 "}")
         self.ToggleBotton_4.setIcon(icon1)
@@ -1337,7 +1337,7 @@ class Ui_MainWindow(object):
         self.Save_QF.setMinimumSize(QSize(190, 120))
         self.Save_QF.setMaximumSize(QSize(190, 120))
         self.Save_QF.setStyleSheet(u"QFrame#Save_QF{\n"
-"border:2px solid rgba(255, 255, 255, 70);\n"
+"border:2px solid rgb(255, 255, 255);\n"
 "border-radius:15px;\n"
 "}")
         self.verticalLayout_20 = QVBoxLayout(self.Save_QF)
@@ -1366,7 +1366,7 @@ class Ui_MainWindow(object):
 "text-align: left;\n"
 "padding-left: 40px;\n"
 "padding-bottom: 2px;\n"
-"color: rgba(255, 255, 255, 199);\n"
+"color: rgb(255, 255, 255);\n"
 "font: 700 13pt \"Nirmala UI\";\n"
 "}")
         self.ToggleBotton_5.setIcon(icon1)
@@ -1379,7 +1379,7 @@ class Ui_MainWindow(object):
         self.save_res_button.setObjectName(u"save_res_button")
         self.save_res_button.setCursor(QCursor(Qt.PointingHandCursor))
         self.save_res_button.setStyleSheet(u"QCheckBox {\n"
-"color: rgba(255, 255, 255, 199);\n"
+"color: rgb(255, 255, 255);\n"
 "font: 590 10pt \"Nirmala UI\";\n"
 "        }\n"
 "\n"
@@ -1405,7 +1405,7 @@ class Ui_MainWindow(object):
         self.save_txt_button.setObjectName(u"save_txt_button")
         self.save_txt_button.setCursor(QCursor(Qt.PointingHandCursor))
         self.save_txt_button.setStyleSheet(u"QCheckBox {\n"
-"color: rgba(255, 255, 255, 199);\n"
+"color: rgb(255, 255, 255);\n"
 "font: 590 10pt \"Nirmala UI\";\n"
 "        }\n"
 "\n"
