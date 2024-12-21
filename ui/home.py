@@ -144,7 +144,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:hover{\n"
-"background-color:rgba(182, 185, 255, 0.7);\n"
+"background-color:rgba(182, 185, 255, 0.8);\n"
 "}")
         self.ToggleBotton.setAutoDefault(False)
         self.ToggleBotton.setFlat(False)
@@ -183,7 +183,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:hover{\n"
-"background-color: rgba(182, 185, 255, 0.7);\n"
+"background-color: rgba(182, 185, 255, 0.8);\n"
 "}")
 
         self.verticalLayout_5.addWidget(self.src_file_button)
@@ -207,7 +207,7 @@ class Ui_MainWindow(object):
         self.VersionLabel = QLabel(self.VersionInfo)
         self.VersionLabel.setObjectName(u"VersionLabel")
         self.VersionLabel.setStyleSheet(u"font: 900 italic 10pt \"Segoe UI\";\n"
-"color: rgba(255, 255, 255, 255);")
+"color: rgb(255, 255, 255);")
         self.VersionLabel.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_3.addWidget(self.VersionLabel)
@@ -372,7 +372,7 @@ class Ui_MainWindow(object):
         self.QF_Group.setMinimumSize(QSize(0, 100))
         self.QF_Group.setMaximumSize(QSize(16777215, 100))
         self.QF_Group.setStyleSheet(u"QFrame#QF_Group{\n"
-"background-color: rgba(250, 227, 217,0.5);\n"
+"background-color: rgba(250, 227, 217,0.7);\n"
 "border:0px solid rgb(255, 255, 255);\n"
 "border-radius:10px;\n"
 "margin-right: 10px;\n"
@@ -389,8 +389,7 @@ class Ui_MainWindow(object):
         self.Class_QF.setStyleSheet(u"QFrame#Class_QF{\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius: 15px;\n"
-"background-color: qradialgradient(cx:0, cy:0, radius:1, fx:0.1, fy:0.1, stop:0 rgb(162, 129, 247),  stop:1 rgb(119, 111, 252));\n"
-"border: 1px outset rgb(98, 91, 213);\n"
+"background-color: rgb(243, 129, 129);\n"
 "}\n"
 "")
         self.Class_QF.setFrameShadow(QFrame.Raised)
@@ -417,7 +416,8 @@ class Ui_MainWindow(object):
         self.label_5.setFont(font2)
         self.label_5.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "padding-left:12px;\n"
-"font: 700 italic 16pt \"Segoe UI\";")
+"padding-bottom:4px;\n"
+"font: 600 14pt \"Segoe UI\";")
         self.label_5.setAlignment(Qt.AlignCenter)
         self.label_5.setIndent(0)
 
@@ -476,8 +476,7 @@ class Ui_MainWindow(object):
         self.Target_QF.setStyleSheet(u"QFrame#Target_QF{\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius: 15px;\n"
-"background-color: qradialgradient(cx:0, cy:0, radius:1, fx:0.1, fy:0.1, stop:0 rgb(253, 139, 133),  stop:1 rgb(248, 194, 152));\n"
-"border: 1px outset rgb(252, 194, 149)\n"
+"background-color: rgb(252, 227, 138);\n"
 "}\n"
 "")
         self.Target_QF.setFrameShadow(QFrame.Raised)
@@ -499,7 +498,8 @@ class Ui_MainWindow(object):
         self.label_6.setFont(font2)
         self.label_6.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "padding-left:12px;\n"
-"font: 700 italic 16pt \"Segoe UI\";")
+"padding-bottom:4px;\n"
+"font: 600 14pt \"Segoe UI\";")
         self.label_6.setAlignment(Qt.AlignCenter)
         self.label_6.setIndent(0)
 
@@ -552,8 +552,7 @@ class Ui_MainWindow(object):
         self.Fps_QF.setStyleSheet(u"QFrame#Fps_QF{\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius: 15px;\n"
-"background-color: qradialgradient(cx:0, cy:0, radius:1, fx:0.1, fy:0.1, stop:0 rgb(243, 175, 189),  stop:1 rgb(155, 118, 218));\n"
-"border: 1px outset rgb(153, 117, 219)\n"
+"background-color: rgb(185, 223, 182);\n"
 "}\n"
 "")
         self.Fps_QF.setFrameShadow(QFrame.Raised)
@@ -575,7 +574,8 @@ class Ui_MainWindow(object):
         self.label_7.setFont(font2)
         self.label_7.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "padding-left:12px;\n"
-"font: 700 italic 16pt \"Segoe UI\";")
+"padding-bottom:4px;\n"
+"font: 600 14pt \"Segoe UI\";")
         self.label_7.setMidLineWidth(-1)
         self.label_7.setAlignment(Qt.AlignCenter)
         self.label_7.setWordWrap(False)
@@ -630,8 +630,7 @@ class Ui_MainWindow(object):
         self.Model_QF.setStyleSheet(u"QFrame#Model_QF{\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius: 15px;\n"
-"background-color: qradialgradient(cx:0, cy:0, radius:1, fx:0.1, fy:0.1, stop:0 rgb(66, 226, 192),  stop:1 rgb(62, 154, 193));\n"
-"border: 1px outset rgb(72, 158, 204)\n"
+"background-color: rgb(149, 225, 211);\n"
 "}\n"
 "")
         self.Model_QF.setFrameShadow(QFrame.Raised)
@@ -653,7 +652,8 @@ class Ui_MainWindow(object):
         self.label_8.setFont(font2)
         self.label_8.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "padding-left:12px;\n"
-"font: 700 italic 16pt \"Segoe UI\";")
+"padding-bottom:4px;\n"
+"font: 600 14pt \"Segoe UI\";")
         self.label_8.setMidLineWidth(-1)
         self.label_8.setAlignment(Qt.AlignCenter)
         self.label_8.setWordWrap(False)
@@ -1496,14 +1496,13 @@ class Ui_MainWindow(object):
         self.settings_button.setText("")
         self.min_sf.setText("")
         self.max_sf.setText("")
-        self.close_button.setText("")
-        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Total Classes", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Types", None))
         self.Class_num.setText("")
-        self.label_6.setText(QCoreApplication.translate("MainWindow", u"Total Targets", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"Targets", None))
         self.Target_num.setText("")
-        self.label_7.setText(QCoreApplication.translate("MainWindow", u"Fps", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"FPS", None))
         self.fps_label.setText("")
-        self.label_8.setText(QCoreApplication.translate("MainWindow", u"Use Model", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"Model", None))
         self.Model_name.setText("")
         self.pre_video.setText("")
         self.res_video.setText("")

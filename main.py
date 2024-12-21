@@ -304,10 +304,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.setWindowFlags(Qt.FramelessWindowHint)  # Set window flag: hide window borders
         UIFuncitons.uiDefinitions(self)
         # Show module shadows
-        UIFuncitons.shadow_style(self, self.Class_QF, QColor(162,129,247))
-        UIFuncitons.shadow_style(self, self.Target_QF, QColor(251, 157, 139))
-        UIFuncitons.shadow_style(self, self.Fps_QF, QColor(170, 128, 213))
-        UIFuncitons.shadow_style(self, self.Model_QF, QColor(64, 186, 193))
+        # UIFuncitons.shadow_style(self, self.Class_QF, QColor(213, 113, 113))
+        # UIFuncitons.shadow_style(self, self.Target_QF, QColor(221, 199, 121))
+        # UIFuncitons.shadow_style(self, self.Fps_QF, QColor(205, 223, 182))
+        # UIFuncitons.shadow_style(self, self.Model_QF, QColor(130, 197, 185))
         
 
 

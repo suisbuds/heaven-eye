@@ -315,7 +315,7 @@ font: 600 12pt &quot;Nirmala UI&quot;;
 }
 
 QPushButton:hover{
-background-color:rgba(182, 185, 255, 0.7);
+background-color:rgba(182, 185, 255, 0.8);
 }</string>
                </property>
                <property name="text">
@@ -404,7 +404,7 @@ font: 600 12pt &quot;Nirmala UI&quot;;
 }
 
 QPushButton:hover{
-background-color: rgba(182, 185, 255, 0.7);
+background-color: rgba(182, 185, 255, 0.8);
 }</string>
                </property>
                <property name="text">
@@ -533,7 +533,7 @@ background-color: rgba(114, 129, 214, 59);
               <widget class="QLabel" name="VersionLabel">
                <property name="styleSheet">
                 <string notr="true">font: 900 italic 10pt &quot;Segoe UI&quot;;
-color: rgba(255, 255, 255, 255);</string>
+color: rgb(255, 255, 255);</string>
                </property>
                <!-- <property name="text">
                 <string>Version: 2.0</string>
@@ -805,7 +805,6 @@ QPushButton:pressed {
 </string>
                   </property>
                   <property name="text">
-                   <string/>
                   </property>
                  </widget>
                 </item>
@@ -884,7 +883,7 @@ QPushButton:pressed {
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QFrame#QF_Group{
-background-color: rgba(250, 227, 217,0.5);
+background-color: rgba(250, 227, 217,0.7);
 border:0px solid rgb(255, 255, 255);
 border-radius:10px;
 margin-right: 10px;
@@ -924,8 +923,7 @@ margin-right: 10px;
                      <string notr="true">QFrame#Class_QF{
 color: rgb(255, 255, 255);
 border-radius: 15px;
-background-color: qradialgradient(cx:0, cy:0, radius:1, fx:0.1, fy:0.1, stop:0 rgb(162, 129, 247),  stop:1 rgb(119, 111, 252));
-border: 1px outset rgb(98, 91, 213);
+background-color: rgb(243, 129, 129);
 }
 </string>
                     </property>
@@ -997,10 +995,11 @@ border: 1px outset rgb(98, 91, 213);
                           <property name="styleSheet">
                            <string notr="true">color: rgb(255, 255, 255);
 padding-left:12px;
-font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
+padding-bottom:4px;
+font: 600 14pt &quot;Segoe UI&quot;;</string>
                           </property>
                           <property name="text">
-                           <string>Total Classes</string>
+                           <string>Types</string>
                           </property>
                           <property name="alignment">
                            <set>Qt::AlignCenter</set>
@@ -1118,8 +1117,7 @@ font: 17pt &quot;Microsoft YaHei UI&quot;;</string>
                      <string notr="true">QFrame#Target_QF{
 color: rgb(255, 255, 255);
 border-radius: 15px;
-background-color: qradialgradient(cx:0, cy:0, radius:1, fx:0.1, fy:0.1, stop:0 rgb(253, 139, 133),  stop:1 rgb(248, 194, 152));
-border: 1px outset rgb(252, 194, 149)
+background-color: rgb(252, 227, 138);
 }
 </string>
                     </property>
@@ -1191,10 +1189,11 @@ border: 1px outset rgb(252, 194, 149)
                           <property name="styleSheet">
                            <string notr="true">color: rgb(255, 255, 255);
 padding-left:12px;
-font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
+padding-bottom:4px;
+font: 600 14pt &quot;Segoe UI&quot;;</string>
                           </property>
                           <property name="text">
-                           <string>Total Targets</string>
+                           <string>Targets</string>
                           </property>
                           <property name="alignment">
                            <set>Qt::AlignCenter</set>
@@ -1312,8 +1311,7 @@ font: 17pt &quot;Microsoft YaHei UI&quot;;</string>
                      <string notr="true">QFrame#Fps_QF{
 color: rgb(255, 255, 255);
 border-radius: 15px;
-background-color: qradialgradient(cx:0, cy:0, radius:1, fx:0.1, fy:0.1, stop:0 rgb(243, 175, 189),  stop:1 rgb(155, 118, 218));
-border: 1px outset rgb(153, 117, 219)
+background-color: rgb(185, 223, 182);
 }
 </string>
                     </property>
@@ -1385,13 +1383,14 @@ border: 1px outset rgb(153, 117, 219)
                           <property name="styleSheet">
                            <string notr="true">color: rgb(255, 255, 255);
 padding-left:12px;
-font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
+padding-bottom:4px;
+font: 600 14pt &quot;Segoe UI&quot;;</string>
                           </property>
                           <property name="midLineWidth">
                            <number>-1</number>
                           </property>
                           <property name="text">
-                           <string>Fps</string>
+                           <string>FPS</string>
                           </property>
                           <property name="alignment">
                            <set>Qt::AlignCenter</set>
@@ -1512,8 +1511,7 @@ font: 17pt &quot;Microsoft YaHei UI&quot;;</string>
                      <string notr="true">QFrame#Model_QF{
 color: rgb(255, 255, 255);
 border-radius: 15px;
-background-color: qradialgradient(cx:0, cy:0, radius:1, fx:0.1, fy:0.1, stop:0 rgb(66, 226, 192),  stop:1 rgb(62, 154, 193));
-border: 1px outset rgb(72, 158, 204)
+background-color: rgb(149, 225, 211);
 }
 </string>
                     </property>
@@ -1585,13 +1583,14 @@ border: 1px outset rgb(72, 158, 204)
                           <property name="styleSheet">
                            <string notr="true">color: rgb(255, 255, 255);
 padding-left:12px;
-font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
+padding-bottom:4px;
+font: 600 14pt &quot;Segoe UI&quot;;</string>
                           </property>
                           <property name="midLineWidth">
                            <number>-1</number>
                           </property>
                           <property name="text">
-                           <string>Use Model</string>
+                           <string>Model</string>
                           </property>
                           <property name="alignment">
                            <set>Qt::AlignCenter</set>
