@@ -183,9 +183,9 @@ border-radius:10px</string>
               <string notr="true">font: italic 11pt &quot;Segoe UI&quot;;
 color: rgba(255, 255, 255, 255);</string>
              </property>
-             <property name="text">
-              <!-- <string>By javier</string> -->
-             </property>
+             <!-- <property name="text">
+              <string>By javier</string>
+             </property> -->
              <property name="alignment">
               <set>Qt::AlignCenter</set>
              </property>
@@ -310,21 +310,21 @@ border-left: 23px solid transparent;
 
 text-align: center;
 padding-left: 0px;
-color: rgba(255, 255, 255, 199);
-font: 700 12pt &quot;Nirmala UI&quot;;
+color: rgb(255, 255, 255);
+font: 600 12pt &quot;Nirmala UI&quot;;
 }
 
 QPushButton:hover{
-background-color: rgba(114, 129, 214, 59);
+background-color:rgba(114, 129, 214, 50);
 }</string>
                </property>
                <property name="text">
-                <string>Hide</string>
+                <string>Hide Panel</string>
                </property>
-               <property name="icon">
+               <!-- <property name="icon">
                 <iconset theme="zoom-out">
                  <normaloff>.</normaloff>.</iconset>
-               </property>
+               </property> -->
                <property name="autoDefault">
                 <bool>false</bool>
                </property>
@@ -399,20 +399,20 @@ border-left: 23px solid transparent;
 
 text-align: center;
 padding-left: 0px;
-color: rgba(255, 255, 255, 199);
-font: 700 12pt &quot;Nirmala UI&quot;;
+color: rgb(255, 255, 255);
+font: 600 12pt &quot;Nirmala UI&quot;;
 }
 
 QPushButton:hover{
-background-color: rgba(114, 129, 214, 59);
+background-color: rgba(114, 129, 214, 50);
 }</string>
                </property>
                <property name="text">
-                <string>Local File</string>
+                <string>Open File</string>
                </property>
               </widget>
              </item>
-             <item>
+             <!-- <item>
               <widget class="QPushButton" name="src_cam_button">
                <property name="minimumSize">
                 <size>
@@ -445,8 +445,8 @@ background-color: rgba(114, 129, 214, 59);
                 <string>Camera</string>
                </property>
               </widget>
-             </item>
-             <item>
+             </item> -->
+             <!-- <item>
               <widget class="QPushButton" name="src_rtsp_button">
                <property name="minimumSize">
                 <size>
@@ -482,7 +482,7 @@ background-color: rgba(114, 129, 214, 59);
                 <string>Rtsp</string>
                </property>
               </widget>
-             </item>
+             </item> -->
              <item>
               <spacer name="verticalSpacer">
                <property name="orientation">
@@ -613,7 +613,7 @@ background-color: rgba(255, 255, 255,0);
               <number>20</number>
              </property>
              <property name="topMargin">
-              <number>0</number>
+              <number>10</number>
              </property>
              <property name="bottomMargin">
               <number>0</number>
@@ -721,16 +721,16 @@ QPushButton:hover{
                   <property name="styleSheet">
                    <string notr="true">QPushButton{
 	
-	background-color: rgb(4, 180, 0);
-border:1px solid rgba(113, 17, 15,50);
+	background-color: rgb(255, 187, 57);
+border:1px solid rgb(207, 166, 78 );
 border-radius:6px;
 }
 QPushButton:hover {
-background-color:rgb(139, 29, 31)
+background-color:rgb(207, 166, 78 );
 	
 }
 QPushButton:pressed {
-	background-color: rgb(232, 59, 35);
+	background-color: rgb(128, 139, 150);
 }
 </string>
                   </property>
@@ -756,16 +756,16 @@ QPushButton:pressed {
                   <property name="styleSheet">
                    <string notr="true">QPushButton{
 	
-	background-color: rgb(227, 199, 0);
-border:1px solid rgba(113, 17, 15,50);
+	background-color: rgb(0, 205, 78 );
+border:1px solid rgb(14, 166, 66);
 border-radius:6px;
 }
 QPushButton:hover {
-background-color:rgb(139, 29, 31)
+background-color:rgb(14, 166, 66);
 	
 }
 QPushButton:pressed {
-	background-color: rgb(232, 59, 35);
+	background-color: rgb(128, 139, 150);
 }
 </string>
                   </property>
@@ -791,16 +791,16 @@ QPushButton:pressed {
                   <property name="styleSheet">
                    <string notr="true">QPushButton{
 	
-	background-color: rgb(240, 108, 96);
-border:1px solid rgba(113, 17, 15,50);
+	background-color: rgb(255, 93, 91);
+border:1px solid rgb(207, 84, 77);
 border-radius:6px;
 }
 QPushButton:hover {
-background-color:rgb(139, 29, 31)
+background-color:rgb(207, 84, 77)
 	
 }
 QPushButton:pressed {
-	background-color: rgb(232, 59, 35);
+	background-color: rgb(128, 139, 150);
 }
 </string>
                   </property>
@@ -817,9 +817,9 @@ QPushButton:pressed {
           </item>
           <item>
            <widget class="QFrame" name="content">
-            <property name="frameShape">
+            <!-- <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
-            </property>
+            </property> -->
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
@@ -863,9 +863,9 @@ QPushButton:pressed {
                  <property name="styleSheet">
                   <string notr="true">padding-left:10px;</string>
                  </property>
-                 <property name="text">
+                 <!-- <property name="text">
                   <string>Detection</string>
-                 </property>
+                 </property> -->
                 </widget>
                </item>
                <item>
@@ -890,9 +890,9 @@ border-radius:10px;
 margin-right: 10px;
 }</string>
                  </property>
-                 <property name="frameShape">
+                 <!-- <property name="frameShape">
                   <enum>QFrame::StyledPanel</enum>
-                 </property>
+                 </property> -->
                  <property name="frameShadow">
                   <enum>QFrame::Raised</enum>
                  </property>
@@ -929,9 +929,9 @@ border: 1px outset rgb(98, 91, 213);
 }
 </string>
                     </property>
-                    <property name="frameShape">
+                    <!-- <property name="frameShape">
                      <enum>QFrame::StyledPanel</enum>
-                    </property>
+                    </property> -->
                     <property name="frameShadow">
                      <enum>QFrame::Raised</enum>
                     </property>
@@ -956,9 +956,9 @@ border: 1px outset rgb(98, 91, 213);
                        <property name="styleSheet">
                         <string notr="true">border:none</string>
                        </property>
-                       <property name="frameShape">
+                       <!-- <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
-                       </property>
+                       </property> -->
                        <property name="frameShadow">
                         <enum>QFrame::Raised</enum>
                        </property>
@@ -1034,9 +1034,9 @@ font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
                        <property name="styleSheet">
                         <string notr="true">border:none</string>
                        </property>
-                       <property name="frameShape">
+                       <!-- <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
-                       </property>
+                       </property> -->
                        <property name="frameShadow">
                         <enum>QFrame::Raised</enum>
                        </property>
@@ -1123,9 +1123,9 @@ border: 1px outset rgb(252, 194, 149)
 }
 </string>
                     </property>
-                    <property name="frameShape">
+                    <!-- <property name="frameShape">
                      <enum>QFrame::StyledPanel</enum>
-                    </property>
+                    </property> -->
                     <property name="frameShadow">
                      <enum>QFrame::Raised</enum>
                     </property>
@@ -1150,9 +1150,9 @@ border: 1px outset rgb(252, 194, 149)
                        <property name="styleSheet">
                         <string notr="true">border:none</string>
                        </property>
-                       <property name="frameShape">
+                       <!-- <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
-                       </property>
+                       </property> -->
                        <property name="frameShadow">
                         <enum>QFrame::Raised</enum>
                        </property>
@@ -1228,9 +1228,9 @@ font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
                        <property name="styleSheet">
                         <string notr="true">border:none</string>
                        </property>
-                       <property name="frameShape">
+                       <!-- <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
-                       </property>
+                       </property> -->
                        <property name="frameShadow">
                         <enum>QFrame::Raised</enum>
                        </property>
@@ -1317,9 +1317,9 @@ border: 1px outset rgb(153, 117, 219)
 }
 </string>
                     </property>
-                    <property name="frameShape">
+                    <!-- <property name="frameShape">
                      <enum>QFrame::StyledPanel</enum>
-                    </property>
+                    </property> -->
                     <property name="frameShadow">
                      <enum>QFrame::Raised</enum>
                     </property>
@@ -1344,9 +1344,9 @@ border: 1px outset rgb(153, 117, 219)
                        <property name="styleSheet">
                         <string notr="true">border:none</string>
                        </property>
-                       <property name="frameShape">
+                       <!-- <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
-                       </property>
+                       </property> -->
                        <property name="frameShadow">
                         <enum>QFrame::Raised</enum>
                        </property>
@@ -1428,9 +1428,9 @@ font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
                        <property name="styleSheet">
                         <string notr="true">border:none</string>
                        </property>
-                       <property name="frameShape">
+                       <!-- <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
-                       </property>
+                       </property> -->
                        <property name="frameShadow">
                         <enum>QFrame::Raised</enum>
                        </property>
@@ -1517,9 +1517,9 @@ border: 1px outset rgb(72, 158, 204)
 }
 </string>
                     </property>
-                    <property name="frameShape">
+                    <!-- <property name="frameShape">
                      <enum>QFrame::StyledPanel</enum>
-                    </property>
+                    </property> -->
                     <property name="frameShadow">
                      <enum>QFrame::Raised</enum>
                     </property>
@@ -1544,9 +1544,9 @@ border: 1px outset rgb(72, 158, 204)
                        <property name="styleSheet">
                         <string notr="true">border:none</string>
                        </property>
-                       <property name="frameShape">
+                       <!-- <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
-                       </property>
+                       </property> -->
                        <property name="frameShadow">
                         <enum>QFrame::Raised</enum>
                        </property>
@@ -1628,9 +1628,9 @@ font: 700 italic 16pt &quot;Segoe UI&quot;;</string>
                        <property name="styleSheet">
                         <string notr="true">border:none</string>
                        </property>
-                       <property name="frameShape">
+                       <!-- <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
-                       </property>
+                       </property> -->
                        <property name="frameShadow">
                         <enum>QFrame::Raised</enum>
                        </property>
@@ -1700,9 +1700,9 @@ font: 15pt &quot;Microsoft YaHei UI&quot;;
                  <property name="styleSheet">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
+                 <!-- <property name="frameShape">
                   <enum>QFrame::StyledPanel</enum>
-                 </property>
+                 </property> -->
                  <property name="frameShadow">
                   <enum>QFrame::Raised</enum>
                  </property>
@@ -1790,9 +1790,9 @@ border-radius:15px</string>
                    <height>30</height>
                   </size>
                  </property>
-                 <property name="frameShape">
+                 <!-- <property name="frameShape">
                   <enum>QFrame::StyledPanel</enum>
-                 </property>
+                 </property> -->
                  <property name="frameShadow">
                   <enum>QFrame::Raised</enum>
                  </property>
@@ -1964,9 +1964,9 @@ border-bottom-right-radius:0px;
 border-bottom-left-radius:30px;
 }</string>
                </property>
-               <property name="frameShape">
+               <!-- <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
-               </property>
+               </property> -->
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
                </property>
@@ -3073,9 +3073,9 @@ padding-left: 10px;
               <height>30</height>
              </size>
             </property>
-            <property name="frameShape">
+            <!-- <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
-            </property>
+            </property> -->
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
@@ -3114,9 +3114,9 @@ color: rgba(0, 0, 0, 140);</string>
                <property name="styleSheet">
                 <string notr="true">border-radius:20px;</string>
                </property>
-               <property name="frameShape">
+               <!-- <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
-               </property>
+               </property> -->
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
                </property>

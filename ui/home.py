@@ -139,21 +139,13 @@ class Ui_MainWindow(object):
 "\n"
 "text-align: center;\n"
 "padding-left: 0px;\n"
-"color: rgba(255, 255, 255, 199);\n"
-"font: 700 12pt \"Nirmala UI\";\n"
+"color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Nirmala UI\";\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
-"background-color: rgba(114, 129, 214, 59);\n"
+"background-color:rgba(114, 129, 214, 50);\n"
 "}")
-        icon = QIcon()
-        iconThemeName = u"zoom-out"
-        if QIcon.hasThemeIcon(iconThemeName):
-            icon = QIcon.fromTheme(iconThemeName)
-        else:
-            icon.addFile(u".", QSize(), QIcon.Normal, QIcon.Off)
-
-        self.ToggleBotton.setIcon(icon)
         self.ToggleBotton.setAutoDefault(False)
         self.ToggleBotton.setFlat(False)
 
@@ -186,62 +178,15 @@ class Ui_MainWindow(object):
 "\n"
 "text-align: center;\n"
 "padding-left: 0px;\n"
-"color: rgba(255, 255, 255, 199);\n"
-"font: 700 12pt \"Nirmala UI\";\n"
+"color: rgb(255, 255, 255);\n"
+"font: 600 12pt \"Nirmala UI\";\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
-"background-color: rgba(114, 129, 214, 59);\n"
+"background-color: rgba(114, 129, 214, 50);\n"
 "}")
 
         self.verticalLayout_5.addWidget(self.src_file_button)
-
-        self.src_cam_button = QPushButton(self.MenuBox)
-        self.src_cam_button.setObjectName(u"src_cam_button")
-        self.src_cam_button.setMinimumSize(QSize(0, 45))
-        self.src_cam_button.setCursor(QCursor(Qt.PointingHandCursor))
-        self.src_cam_button.setStyleSheet(u"QPushButton{\n"
-"background-image: url(:/all/img/cam.png);\n"
-"background-repeat: no-repeat;\n"
-"background-position: left center;\n"
-"border: none;\n"
-"border-left: 23px solid transparent;\n"
-"\n"
-"text-align: center;\n"
-"padding-left: 0px;\n"
-"color: rgba(255, 255, 255, 199);\n"
-"font: 700 12pt \"Nirmala UI\";\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"background-color: rgba(114, 129, 214, 59);\n"
-"}")
-
-        self.verticalLayout_5.addWidget(self.src_cam_button)
-
-        self.src_rtsp_button = QPushButton(self.MenuBox)
-        self.src_rtsp_button.setObjectName(u"src_rtsp_button")
-        self.src_rtsp_button.setMinimumSize(QSize(0, 45))
-        self.src_rtsp_button.setCursor(QCursor(Qt.PointingHandCursor))
-        self.src_rtsp_button.setAutoFillBackground(False)
-        self.src_rtsp_button.setStyleSheet(u"QPushButton{\n"
-"background-image: url(:/all/img/RTSP.png);\n"
-"background-repeat: no-repeat;\n"
-"background-position: left center;\n"
-"border: none;\n"
-"border-left: 23px solid transparent;\n"
-"\n"
-"text-align: center;\n"
-"padding-left: 0px;\n"
-"color: rgba(255, 255, 255, 199);\n"
-"font: 700 12pt \"Nirmala UI\";\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"background-color: rgba(114, 129, 214, 59);\n"
-"}")
-
-        self.verticalLayout_5.addWidget(self.src_rtsp_button)
 
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
@@ -296,7 +241,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout = QHBoxLayout(self.top)
         self.horizontalLayout.setSpacing(0)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.horizontalLayout.setContentsMargins(20, 0, -1, 0)
+        self.horizontalLayout.setContentsMargins(20, 10, -1, 0)
         self.explain_title = QLabel(self.top)
         self.explain_title.setObjectName(u"explain_title")
         self.explain_title.setMinimumSize(QSize(0, 30))
@@ -338,16 +283,16 @@ class Ui_MainWindow(object):
         self.min_sf.setMaximumSize(QSize(14, 14))
         self.min_sf.setStyleSheet(u"QPushButton{\n"
 "	\n"
-"	background-color: rgb(4, 180, 0);\n"
-"border:1px solid rgba(113, 17, 15,50);\n"
+"	background-color: rgb(255, 187, 57);\n"
+"border:1px solid rgb(207, 166, 78 );\n"
 "border-radius:6px;\n"
 "}\n"
 "QPushButton:hover {\n"
-"background-color:rgb(139, 29, 31)\n"
+"background-color:rgb(207, 166, 78 );\n"
 "	\n"
 "}\n"
 "QPushButton:pressed {\n"
-"	background-color: rgb(232, 59, 35);\n"
+"	background-color: rgb(128, 139, 150);\n"
 "}\n"
 "")
 
@@ -359,16 +304,16 @@ class Ui_MainWindow(object):
         self.max_sf.setMaximumSize(QSize(14, 14))
         self.max_sf.setStyleSheet(u"QPushButton{\n"
 "	\n"
-"	background-color: rgb(227, 199, 0);\n"
-"border:1px solid rgba(113, 17, 15,50);\n"
+"	background-color: rgb(0, 205, 78 );\n"
+"border:1px solid rgb(14, 166, 66);\n"
 "border-radius:6px;\n"
 "}\n"
 "QPushButton:hover {\n"
-"background-color:rgb(139, 29, 31)\n"
+"background-color:rgb(14, 166, 66);\n"
 "	\n"
 "}\n"
 "QPushButton:pressed {\n"
-"	background-color: rgb(232, 59, 35);\n"
+"	background-color: rgb(128, 139, 150);\n"
 "}\n"
 "")
 
@@ -380,16 +325,16 @@ class Ui_MainWindow(object):
         self.close_button.setMaximumSize(QSize(14, 14))
         self.close_button.setStyleSheet(u"QPushButton{\n"
 "	\n"
-"	background-color: rgb(240, 108, 96);\n"
-"border:1px solid rgba(113, 17, 15,50);\n"
+"	background-color: rgb(255, 93, 91);\n"
+"border:1px solid rgb(207, 84, 77);\n"
 "border-radius:6px;\n"
 "}\n"
 "QPushButton:hover {\n"
-"background-color:rgb(139, 29, 31)\n"
+"background-color:rgb(207, 84, 77)\n"
 "	\n"
 "}\n"
 "QPushButton:pressed {\n"
-"	background-color: rgb(232, 59, 35);\n"
+"	background-color: rgb(128, 139, 150);\n"
 "}\n"
 "")
 
@@ -403,7 +348,6 @@ class Ui_MainWindow(object):
 
         self.content = QFrame(self.ContentBox)
         self.content.setObjectName(u"content")
-        self.content.setFrameShape(QFrame.StyledPanel)
         self.content.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_5 = QHBoxLayout(self.content)
         self.horizontalLayout_5.setSpacing(0)
@@ -433,7 +377,6 @@ class Ui_MainWindow(object):
 "border-radius:10px;\n"
 "margin-right: 10px;\n"
 "}")
-        self.QF_Group.setFrameShape(QFrame.StyledPanel)
         self.QF_Group.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_3 = QHBoxLayout(self.QF_Group)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
@@ -450,7 +393,6 @@ class Ui_MainWindow(object):
 "border: 1px outset rgb(98, 91, 213);\n"
 "}\n"
 "")
-        self.Class_QF.setFrameShape(QFrame.StyledPanel)
         self.Class_QF.setFrameShadow(QFrame.Raised)
         self.verticalLayout_7 = QVBoxLayout(self.Class_QF)
         self.verticalLayout_7.setSpacing(0)
@@ -459,7 +401,6 @@ class Ui_MainWindow(object):
         self.Class_top = QFrame(self.Class_QF)
         self.Class_top.setObjectName(u"Class_top")
         self.Class_top.setStyleSheet(u"border:none")
-        self.Class_top.setFrameShape(QFrame.StyledPanel)
         self.Class_top.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_6 = QHBoxLayout(self.Class_top)
         self.horizontalLayout_6.setSpacing(0)
@@ -497,7 +438,6 @@ class Ui_MainWindow(object):
         self.Class_bottom = QFrame(self.Class_QF)
         self.Class_bottom.setObjectName(u"Class_bottom")
         self.Class_bottom.setStyleSheet(u"border:none")
-        self.Class_bottom.setFrameShape(QFrame.StyledPanel)
         self.Class_bottom.setFrameShadow(QFrame.Raised)
         self.verticalLayout_8 = QVBoxLayout(self.Class_bottom)
         self.verticalLayout_8.setSpacing(0)
@@ -540,7 +480,6 @@ class Ui_MainWindow(object):
 "border: 1px outset rgb(252, 194, 149)\n"
 "}\n"
 "")
-        self.Target_QF.setFrameShape(QFrame.StyledPanel)
         self.Target_QF.setFrameShadow(QFrame.Raised)
         self.verticalLayout_9 = QVBoxLayout(self.Target_QF)
         self.verticalLayout_9.setSpacing(0)
@@ -549,7 +488,6 @@ class Ui_MainWindow(object):
         self.Target_top = QFrame(self.Target_QF)
         self.Target_top.setObjectName(u"Target_top")
         self.Target_top.setStyleSheet(u"border:none")
-        self.Target_top.setFrameShape(QFrame.StyledPanel)
         self.Target_top.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_7 = QHBoxLayout(self.Target_top)
         self.horizontalLayout_7.setSpacing(0)
@@ -582,7 +520,6 @@ class Ui_MainWindow(object):
         self.Target_bottom = QFrame(self.Target_QF)
         self.Target_bottom.setObjectName(u"Target_bottom")
         self.Target_bottom.setStyleSheet(u"border:none")
-        self.Target_bottom.setFrameShape(QFrame.StyledPanel)
         self.Target_bottom.setFrameShadow(QFrame.Raised)
         self.verticalLayout_10 = QVBoxLayout(self.Target_bottom)
         self.verticalLayout_10.setSpacing(0)
@@ -619,7 +556,6 @@ class Ui_MainWindow(object):
 "border: 1px outset rgb(153, 117, 219)\n"
 "}\n"
 "")
-        self.Fps_QF.setFrameShape(QFrame.StyledPanel)
         self.Fps_QF.setFrameShadow(QFrame.Raised)
         self.verticalLayout_11 = QVBoxLayout(self.Fps_QF)
         self.verticalLayout_11.setSpacing(0)
@@ -628,7 +564,6 @@ class Ui_MainWindow(object):
         self.Fps_top = QFrame(self.Fps_QF)
         self.Fps_top.setObjectName(u"Fps_top")
         self.Fps_top.setStyleSheet(u"border:none")
-        self.Fps_top.setFrameShape(QFrame.StyledPanel)
         self.Fps_top.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_8 = QHBoxLayout(self.Fps_top)
         self.horizontalLayout_8.setSpacing(0)
@@ -663,7 +598,6 @@ class Ui_MainWindow(object):
         self.Fps_bottom = QFrame(self.Fps_QF)
         self.Fps_bottom.setObjectName(u"Fps_bottom")
         self.Fps_bottom.setStyleSheet(u"border:none")
-        self.Fps_bottom.setFrameShape(QFrame.StyledPanel)
         self.Fps_bottom.setFrameShadow(QFrame.Raised)
         self.verticalLayout_12 = QVBoxLayout(self.Fps_bottom)
         self.verticalLayout_12.setSpacing(0)
@@ -700,7 +634,6 @@ class Ui_MainWindow(object):
 "border: 1px outset rgb(72, 158, 204)\n"
 "}\n"
 "")
-        self.Model_QF.setFrameShape(QFrame.StyledPanel)
         self.Model_QF.setFrameShadow(QFrame.Raised)
         self.verticalLayout_13 = QVBoxLayout(self.Model_QF)
         self.verticalLayout_13.setSpacing(0)
@@ -709,7 +642,6 @@ class Ui_MainWindow(object):
         self.Model_top = QFrame(self.Model_QF)
         self.Model_top.setObjectName(u"Model_top")
         self.Model_top.setStyleSheet(u"border:none")
-        self.Model_top.setFrameShape(QFrame.StyledPanel)
         self.Model_top.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_9 = QHBoxLayout(self.Model_top)
         self.horizontalLayout_9.setSpacing(0)
@@ -744,7 +676,6 @@ class Ui_MainWindow(object):
         self.Model_bottom = QFrame(self.Model_QF)
         self.Model_bottom.setObjectName(u"Model_bottom")
         self.Model_bottom.setStyleSheet(u"border:none")
-        self.Model_bottom.setFrameShape(QFrame.StyledPanel)
         self.Model_bottom.setFrameShadow(QFrame.Raised)
         self.verticalLayout_14 = QVBoxLayout(self.Model_bottom)
         self.verticalLayout_14.setSpacing(0)
@@ -782,7 +713,6 @@ class Ui_MainWindow(object):
         self.Result_QF = QFrame(self.content)
         self.Result_QF.setObjectName(u"Result_QF")
         self.Result_QF.setStyleSheet(u"")
-        self.Result_QF.setFrameShape(QFrame.StyledPanel)
         self.Result_QF.setFrameShadow(QFrame.Raised)
         self.verticalLayout_16 = QVBoxLayout(self.Result_QF)
         self.verticalLayout_16.setSpacing(0)
@@ -819,7 +749,6 @@ class Ui_MainWindow(object):
         self.Pause_QF.setObjectName(u"Pause_QF")
         self.Pause_QF.setMinimumSize(QSize(0, 30))
         self.Pause_QF.setMaximumSize(QSize(16777215, 30))
-        self.Pause_QF.setFrameShape(QFrame.StyledPanel)
         self.Pause_QF.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_4 = QHBoxLayout(self.Pause_QF)
         self.horizontalLayout_4.setSpacing(10)
@@ -839,10 +768,10 @@ class Ui_MainWindow(object):
 "QPushButton:hover{\n"
 "\n"
 "}")
-        icon1 = QIcon()
-        icon1.addFile(u":/all/img/begin.png", QSize(), QIcon.Normal, QIcon.Off)
-        icon1.addFile(u":/all/img/pause.png", QSize(), QIcon.Normal, QIcon.On)
-        self.run_button.setIcon(icon1)
+        icon = QIcon()
+        icon.addFile(u":/all/img/begin.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/all/img/pause.png", QSize(), QIcon.Normal, QIcon.On)
+        self.run_button.setIcon(icon)
         self.run_button.setIconSize(QSize(30, 30))
         self.run_button.setCheckable(True)
         self.run_button.setChecked(False)
@@ -907,7 +836,6 @@ class Ui_MainWindow(object):
 "border-bottom-right-radius:0px;\n"
 "border-bottom-left-radius:30px;\n"
 "}")
-        self.prm_page.setFrameShape(QFrame.StyledPanel)
         self.prm_page.setFrameShadow(QFrame.Raised)
         self.verticalLayout_22 = QVBoxLayout(self.prm_page)
         self.verticalLayout_22.setSpacing(15)
@@ -965,7 +893,14 @@ class Ui_MainWindow(object):
 "color: rgba(255, 255, 255, 199);\n"
 "font: 700 13pt \"Nirmala UI\";\n"
 "}")
-        self.ToggleBotton_6.setIcon(icon)
+        icon1 = QIcon()
+        iconThemeName = u"zoom-out"
+        if QIcon.hasThemeIcon(iconThemeName):
+            icon1 = QIcon.fromTheme(iconThemeName)
+        else:
+            icon1.addFile(u".", QSize(), QIcon.Normal, QIcon.Off)
+
+        self.ToggleBotton_6.setIcon(icon1)
         self.ToggleBotton_6.setAutoDefault(False)
         self.ToggleBotton_6.setFlat(False)
 
@@ -1071,7 +1006,7 @@ class Ui_MainWindow(object):
 "color: rgba(255, 255, 255, 199);\n"
 "font: 700 13pt \"Nirmala UI\";\n"
 "}")
-        self.ToggleBotton_2.setIcon(icon)
+        self.ToggleBotton_2.setIcon(icon1)
         self.ToggleBotton_2.setAutoDefault(False)
         self.ToggleBotton_2.setFlat(False)
 
@@ -1193,7 +1128,7 @@ class Ui_MainWindow(object):
 "color: rgba(255, 255, 255, 199);\n"
 "font: 700 13pt \"Nirmala UI\";\n"
 "}")
-        self.ToggleBotton_3.setIcon(icon)
+        self.ToggleBotton_3.setIcon(icon1)
         self.ToggleBotton_3.setAutoDefault(False)
         self.ToggleBotton_3.setFlat(False)
 
@@ -1315,7 +1250,7 @@ class Ui_MainWindow(object):
 "color: rgba(255, 255, 255, 199);\n"
 "font: 700 13pt \"Nirmala UI\";\n"
 "}")
-        self.ToggleBotton_4.setIcon(icon)
+        self.ToggleBotton_4.setIcon(icon1)
         self.ToggleBotton_4.setAutoDefault(False)
         self.ToggleBotton_4.setFlat(False)
 
@@ -1434,7 +1369,7 @@ class Ui_MainWindow(object):
 "color: rgba(255, 255, 255, 199);\n"
 "font: 700 13pt \"Nirmala UI\";\n"
 "}")
-        self.ToggleBotton_5.setIcon(icon)
+        self.ToggleBotton_5.setIcon(icon1)
         self.ToggleBotton_5.setAutoDefault(False)
         self.ToggleBotton_5.setFlat(False)
 
@@ -1509,7 +1444,6 @@ class Ui_MainWindow(object):
         self.below.setObjectName(u"below")
         self.below.setMinimumSize(QSize(0, 30))
         self.below.setMaximumSize(QSize(16777215, 30))
-        self.below.setFrameShape(QFrame.StyledPanel)
         self.below.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_13 = QHBoxLayout(self.below)
         self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
@@ -1525,7 +1459,6 @@ class Ui_MainWindow(object):
         self.frame_size_grip.setObjectName(u"frame_size_grip")
         self.frame_size_grip.setMaximumSize(QSize(20, 16777215))
         self.frame_size_grip.setStyleSheet(u"border-radius:20px;")
-        self.frame_size_grip.setFrameShape(QFrame.StyledPanel)
         self.frame_size_grip.setFrameShadow(QFrame.Raised)
 
         self.horizontalLayout_13.addWidget(self.frame_size_grip)
@@ -1557,16 +1490,13 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.Title.setText(QCoreApplication.translate("MainWindow", u"Heaven Eye", None))
-        self.ToggleBotton.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
-        self.src_file_button.setText(QCoreApplication.translate("MainWindow", u"Local File", None))
-        self.src_cam_button.setText(QCoreApplication.translate("MainWindow", u"Camera", None))
-        self.src_rtsp_button.setText(QCoreApplication.translate("MainWindow", u"Rtsp", None))
+        self.ToggleBotton.setText(QCoreApplication.translate("MainWindow", u"Hide Panel", None))
+        self.src_file_button.setText(QCoreApplication.translate("MainWindow", u"Open File", None))
         self.explain_title.setText(QCoreApplication.translate("MainWindow", u"Heaven Eye", None))
         self.settings_button.setText("")
         self.min_sf.setText("")
         self.max_sf.setText("")
         self.close_button.setText("")
-        self.char_label.setText(QCoreApplication.translate("MainWindow", u"Detection", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Total Classes", None))
         self.Class_num.setText("")
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Total Targets", None))
