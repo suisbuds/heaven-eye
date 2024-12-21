@@ -35,7 +35,6 @@
       <property name="styleSheet">
        <string notr="true">QFrame#Main_QF{
 	background-color: rgb(255, 182, 185);
-	<!-- background-color: qlineargradient(x0:0, y0:1, x1:1, y1:1,stop:0.4  rgb(107, 128, 210), stop:1 rgb(180, 140, 255)); -->
 border:0px solid black;
 border-radius:0px
 }</string>
@@ -315,7 +314,7 @@ font: 600 12pt &quot;Segoe UI&quot;;
 }
 
 QPushButton:hover{
-background-color:rgb(187, 222, 214);
+background-color:rgb(97, 192, 191);
 }</string>
                </property>
                <property name="text">
@@ -404,7 +403,7 @@ font: 600 12pt &quot;Segoe UI&quot;;
 }
 
 QPushButton:hover{
-background-color: rgb(187, 222, 214);
+background-color: rgb(97, 192, 191);
 }</string>
                </property>
                <property name="text">
@@ -883,7 +882,7 @@ QPushButton:pressed {
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QFrame#QF_Group{
-background-color: rgba(250, 227, 217,0.7);
+background-color: rgba(250, 227, 217, 0.5);
 border:0px solid rgb(255, 255, 255);
 border-radius:10px;
 margin-right: 10px;
@@ -1716,7 +1715,7 @@ font: 600 14pt &quot;Segoe UI&quot;;
                    <number>0</number>
                   </property>
                   <property name="rightMargin">
-                   <number>0</number>
+                   <number>10</number>
                   </property>
                   <property name="bottomMargin">
                    <number>0</number>
@@ -1724,7 +1723,7 @@ font: 600 14pt &quot;Segoe UI&quot;;
                   <item>
                    <widget class="QSplitter" name="splitter">
                     <property name="styleSheet">
-                     <string notr="true">#splitter::handle{background: 1px solid  rgba(200, 200, 200,100);}</string>
+                     <string notr="true">#splitter::handle{background: 1px solid  rgb(200, 200, 200);}</string>
                     </property>
                     <property name="orientation">
                      <enum>Qt::Horizontal</enum>
@@ -1740,7 +1739,7 @@ font: 600 14pt &quot;Segoe UI&quot;;
                       </size>
                      </property>
                      <property name="styleSheet">
-                      <string notr="true">background-color: rgb(238, 242, 255);
+                      <string notr="true">background-color: rgba(250, 227, 217, 0.5);
 border:2px solid rgb(255, 255, 255);
 border-radius:15px</string>
                      </property>
@@ -1759,7 +1758,7 @@ border-radius:15px</string>
                       </size>
                      </property>
                      <property name="styleSheet">
-                      <string notr="true">background-color: rgb(238, 242, 255);
+                      <string notr="true">background-color: rgba(250, 227, 217, 0.5);
 border:2px solid rgb(255, 255, 255);
 border-radius:15px</string>
                      </property>
@@ -1868,29 +1867,29 @@ QPushButton:hover{
                     <property name="minimumSize">
                      <size>
                       <width>0</width>
-                      <height>20</height>
+                      <height>25</height>
                      </size>
                     </property>
                     <property name="maximumSize">
                      <size>
                       <width>16777215</width>
-                      <height>20</height>
+                      <height>25</height>
                      </size>
                     </property>
                     <property name="styleSheet">
                      <string notr="true">QProgressBar{ 
-font: 700 10pt &quot;Segoe UI&quot;;
-color: rgb(253, 143, 134); 
+font: 600 10pt &quot;Segoe UI&quot;;
+color: rgb(255, 105, 111 ); 
 text-align:center; 
-border:3px solid rgb(255, 255, 255);
+border:2px solid rgb(255, 255, 255);
 border-radius: 10px; 
-background-color: rgba(215, 215, 215,100);
+background-color: rgba(215,215,215, 0.5);
 } 
 
 QProgressBar:chunk{ 
-border-radius:0px; 
-background: rgba(119, 111, 252, 200);
-border-radius: 7px;
+border-radius:10px; 
+background: rgb(149, 225, 211);
+border-radius: 10px;
 }</string>
                     </property>
                     <property name="maximum">

@@ -84,7 +84,7 @@ class YoloPredictor(BasePredictor, QObject):
                 LOGGER.info('')
 
             # set model    
-            self.yolo2main_status_msg.emit('Loding Model...')
+            self.yolo2main_status_msg.emit('Loding Model')
             if not self.model:
                 self.setup_model(self.new_model_name)
                 self.used_model_name = self.new_model_name
@@ -115,19 +115,19 @@ class YoloPredictor(BasePredictor, QObject):
                 if self.stop_dtc:
                     if isinstance(self.vid_writer[-1], cv2.VideoWriter):
                         self.vid_writer[-1].release()  # release final video writer
-                    self.yolo2main_status_msg.emit('Detection terminated!')
+                    self.yolo2main_status_msg.emit('Detection terminated')
                     break
                 
                 # Change the model midway
                 if self.used_model_name != self.new_model_name:  
-                    # self.yolo2main_status_msg.emit('Change Model...')
+                    self.yolo2main_status_msg.emit('Change Model')
                     self.setup_model(self.new_model_name)
                     self.used_model_name = self.new_model_name
                 
                 # pause switch
                 if self.continue_dtc:
                     # time.sleep(0.001)
-                    self.yolo2main_status_msg.emit('Detecting...')
+                    self.yolo2main_status_msg.emit('Detecting')
                     batch = next(self.dataset)  # next data
 
                     self.batch = batch
@@ -401,7 +401,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     # Control start/pause
     def run_or_continue(self):
         if self.yolo_predict.source == '':
-            self.show_status('Please select a video source before starting detection...')
+            self.show_status('Please open a video source')
             self.run_button.setChecked(False)
         else:
             self.yolo_predict.stop_dtc = False
@@ -409,7 +409,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 self.run_button.setChecked(True)    # start button
                 self.save_txt_button.setEnabled(False)  # It is forbidden to check and save after starting the detection
                 self.save_res_button.setEnabled(False)
-                self.show_status('Detecting...')           
+                self.show_status('Detecting')           
                 self.yolo_predict.continue_dtc = True   # Control whether Yolo is paused
                 if not self.yolo_thread.isRunning():
                     self.yolo_thread.start()
@@ -417,7 +417,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
             else:
                 self.yolo_predict.continue_dtc = False
-                self.show_status("Pause...")
+                self.show_status("Pause")
                 self.run_button.setChecked(False)    # start button
 
     # bottom status bar information
@@ -430,7 +430,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.progress_bar.setValue(0)
             if self.yolo_thread.isRunning():
                 self.yolo_thread.quit()         # end process
-        elif msg == 'Detection terminated!' or msg == '检测终止':
+        elif msg == 'Detection terminated' or msg == '检测终止':
             self.save_res_button.setEnabled(True)
             self.save_txt_button.setEnabled(True)
             self.run_button.setChecked(False)    
@@ -453,7 +453,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         name, _ = QFileDialog.getOpenFileName(self, 'Video/image', open_fold, "Pic File(*.mp4 *.mkv *.avi *.flv *.jpg *.png)")
         if name:
             self.yolo_predict.source = name
-            self.show_status('Load File：{}'.format(os.path.basename(name))) 
+            self.show_status('Load video: {}'.format(os.path.basename(name))) 
             config['open_fold'] = os.path.dirname(name)
             config_json = json.dumps(config, ensure_ascii=False, indent=2)  
             with open(config_file, 'w', encoding='utf-8') as f:
@@ -498,7 +498,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             action = popMenu.exec(pos)
             if action:
                 self.yolo_predict.source = action.text()
-                self.show_status('Loading camera：{}'.format(action.text()))
+                self.show_status('Load camera: {}'.format(action.text()))
 
         except Exception as e:
             self.show_status('%s' % e)
@@ -531,7 +531,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             new_json = json.dumps(new_config, ensure_ascii=False, indent=2)
             with open('config/ip.json', 'w', encoding='utf-8') as f:
                 f.write(new_json)
-            self.show_status('Loading rtsp：{}'.format(ip))
+            self.show_status('Load rtsp: {}'.format(ip))
             self.rtsp_window.close()
         except Exception as e:
             self.show_status('%s' % e)
@@ -539,19 +539,19 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     # Save test result button--picture/video
     def is_save_res(self):
         if self.save_res_button.checkState() == Qt.CheckState.Unchecked:
-            self.show_status('NOTE: Run image results are not saved.')
+            self.show_status('NOTE: Image results wont be saved')
             self.yolo_predict.save_res = False
         elif self.save_res_button.checkState() == Qt.CheckState.Checked:
-            self.show_status('NOTE: Run image results will be saved.')
+            self.show_status('NOTE: Image results will be saved')
             self.yolo_predict.save_res = True
     
     # Save test result button -- label (txt)
     def is_save_txt(self):
         if self.save_txt_button.checkState() == Qt.CheckState.Unchecked:
-            self.show_status('NOTE: Labels results are not saved.')
+            self.show_status('NOTE: Label results wont be saved')
             self.yolo_predict.save_txt = False
         elif self.save_txt_button.checkState() == Qt.CheckState.Checked:
-            self.show_status('NOTE: Labels results will be saved.')
+            self.show_status('NOTE: Label results will be saved')
             self.yolo_predict.save_txt = True
 
     # Configuration initialization  ~~~wait to change~~~
@@ -591,7 +591,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.save_txt_button.setCheckState(Qt.CheckState(save_txt)) 
         self.yolo_predict.save_txt = (False if save_txt==0 else True )
         self.run_button.setChecked(False)  
-        # self.show_status("Welcome~")
 
     # Terminate button and associated state
     def stop(self):
@@ -614,26 +613,26 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.iou_slider.setValue(int(x*100))    # The box value changes, changing the slider
         elif flag == 'iou_slider':
             self.iou_spinbox.setValue(x/100)        # The slider value changes, changing the box
-            self.show_status('IOU Threshold: %s' % str(x/100))
+            self.show_status('IOU Threshold: %s' % str(x/100)) # Intersection over Union，表示预测框和真实框的重叠程度，用来判断检测效果
             self.yolo_predict.iou_thres = x/100
         elif flag == 'conf_spinbox':
             self.conf_slider.setValue(int(x*100))
         elif flag == 'conf_slider':
             self.conf_spinbox.setValue(x/100)
-            self.show_status('Conf Threshold: %s' % str(x/100))
+            self.show_status('Confidence Threshold: %s' % str(x/100)) # 置信度，表示模型对检测结果的置信程度
             self.yolo_predict.conf_thres = x/100
         elif flag == 'speed_spinbox':
             self.speed_slider.setValue(x)
         elif flag == 'speed_slider':
             self.speed_spinbox.setValue(x)
-            self.show_status('Delay: %s ms' % str(x))
+            self.show_status('Delay: %s ms' % str(x)) # 延迟
             self.yolo_predict.speed_thres = x  # ms
             
     # change model
     def change_model(self,x):
         self.select_model = self.model_box.currentText()
         self.yolo_predict.new_model_name = "./models/%s" % self.select_model
-        self.show_status('Change Model：%s' % self.select_model)
+        self.show_status('Change Model: %s' % self.select_model)
         self.Model_name.setText(self.select_model)
 
     # label result

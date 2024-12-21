@@ -37,7 +37,6 @@ class Ui_MainWindow(object):
         self.Main_QF.setObjectName(u"Main_QF")
         self.Main_QF.setStyleSheet(u"QFrame#Main_QF{\n"
 "	background-color: rgb(255, 182, 185);\n"
-"	\n"
 "border:0px solid black;\n"
 "border-radius:0px\n"
 "}")
@@ -144,7 +143,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:hover{\n"
-"background-color:rgb(187, 222, 214);\n"
+"background-color:rgb(97, 192, 191);\n"
 "}")
         self.ToggleBotton.setAutoDefault(False)
         self.ToggleBotton.setFlat(False)
@@ -183,7 +182,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton:hover{\n"
-"background-color: rgb(187, 222, 214);\n"
+"background-color: rgb(97, 192, 191);\n"
 "}")
 
         self.verticalLayout_5.addWidget(self.src_file_button)
@@ -372,7 +371,7 @@ class Ui_MainWindow(object):
         self.QF_Group.setMinimumSize(QSize(0, 100))
         self.QF_Group.setMaximumSize(QSize(16777215, 100))
         self.QF_Group.setStyleSheet(u"QFrame#QF_Group{\n"
-"background-color: rgba(250, 227, 217,0.7);\n"
+"background-color: rgba(250, 227, 217, 0.5);\n"
 "border:0px solid rgb(255, 255, 255);\n"
 "border-radius:10px;\n"
 "margin-right: 10px;\n"
@@ -717,16 +716,16 @@ class Ui_MainWindow(object):
         self.verticalLayout_16 = QVBoxLayout(self.Result_QF)
         self.verticalLayout_16.setSpacing(0)
         self.verticalLayout_16.setObjectName(u"verticalLayout_16")
-        self.verticalLayout_16.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_16.setContentsMargins(0, 0, 10, 0)
         self.splitter = QSplitter(self.Result_QF)
         self.splitter.setObjectName(u"splitter")
-        self.splitter.setStyleSheet(u"#splitter::handle{background: 1px solid  rgba(200, 200, 200,100);}")
+        self.splitter.setStyleSheet(u"#splitter::handle{background: 1px solid  rgb(200, 200, 200);}")
         self.splitter.setOrientation(Qt.Horizontal)
         self.splitter.setHandleWidth(2)
         self.pre_video = QLabel(self.splitter)
         self.pre_video.setObjectName(u"pre_video")
         self.pre_video.setMinimumSize(QSize(200, 100))
-        self.pre_video.setStyleSheet(u"background-color: rgb(238, 242, 255);\n"
+        self.pre_video.setStyleSheet(u"background-color: rgba(250, 227, 217, 0.5);\n"
 "border:2px solid rgb(255, 255, 255);\n"
 "border-radius:15px")
         self.pre_video.setAlignment(Qt.AlignCenter)
@@ -734,7 +733,7 @@ class Ui_MainWindow(object):
         self.res_video = QLabel(self.splitter)
         self.res_video.setObjectName(u"res_video")
         self.res_video.setMinimumSize(QSize(200, 100))
-        self.res_video.setStyleSheet(u"background-color: rgb(238, 242, 255);\n"
+        self.res_video.setStyleSheet(u"background-color: rgba(250, 227, 217, 0.5);\n"
 "border:2px solid rgb(255, 255, 255);\n"
 "border-radius:15px")
         self.res_video.setAlignment(Qt.AlignCenter)
@@ -780,21 +779,21 @@ class Ui_MainWindow(object):
 
         self.progress_bar = QProgressBar(self.Pause_QF)
         self.progress_bar.setObjectName(u"progress_bar")
-        self.progress_bar.setMinimumSize(QSize(0, 20))
-        self.progress_bar.setMaximumSize(QSize(16777215, 20))
+        self.progress_bar.setMinimumSize(QSize(0, 25))
+        self.progress_bar.setMaximumSize(QSize(16777215, 25))
         self.progress_bar.setStyleSheet(u"QProgressBar{ \n"
-"font: 700 10pt \"Segoe UI\";\n"
-"color: rgb(253, 143, 134); \n"
+"font: 600 10pt \"Segoe UI\";\n"
+"color: rgb(255, 105, 111 ); \n"
 "text-align:center; \n"
-"border:3px solid rgb(255, 255, 255);\n"
+"border:2px solid rgb(255, 255, 255);\n"
 "border-radius: 10px; \n"
-"background-color: rgba(215, 215, 215,100);\n"
+"background-color: rgba(215,215,215, 0.5);\n"
 "} \n"
 "\n"
 "QProgressBar:chunk{ \n"
-"border-radius:0px; \n"
-"background: rgba(119, 111, 252, 200);\n"
-"border-radius: 7px;\n"
+"border-radius:10px; \n"
+"background: rgb(149, 225, 211);\n"
+"border-radius: 10px;\n"
 "}")
         self.progress_bar.setMaximum(1000)
         self.progress_bar.setValue(0)
