@@ -829,11 +829,12 @@ class Ui_MainWindow(object):
         self.prm_page.setMinimumSize(QSize(0, 0))
         self.prm_page.setMaximumSize(QSize(0, 16777215))
         self.prm_page.setStyleSheet(u"QFrame#prm_page{\n"
-"background-color: qradialgradient(cx:0, cy:0, radius:1, fx:0.1, fy:0.1, stop:0 rgb(243, 175, 189),  stop:1 rgb(155, 118, 218));\n"
-"border-top-left-radius:30px;\n"
+"background-color: rgba(243, 129, 129, 0.5);\n"
+"border-top-left-radius:10px;\n"
 "border-top-right-radius:0px;\n"
 "border-bottom-right-radius:0px;\n"
-"border-bottom-left-radius:30px;\n"
+"border-bottom-left-radius:10px;\n"
+"margin-top:25px;\n"
 "}")
         self.prm_page.setFrameShadow(QFrame.Raised)
         self.verticalLayout_22 = QVBoxLayout(self.prm_page)
@@ -843,9 +844,9 @@ class Ui_MainWindow(object):
         self.label = QLabel(self.prm_page)
         self.label.setObjectName(u"label")
         self.label.setStyleSheet(u"padding-left: 0px;\n"
-"padding-bottom: 2px;\n"
+"padding-bottom: 20px;\n"
 "color: rgb(255, 255, 255);\n"
-"font: 700 italic 16pt \"Segoe UI\";")
+"font: 600 15pt \"Segoe UI\";")
         self.label.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_22.addWidget(self.label)
@@ -870,7 +871,7 @@ class Ui_MainWindow(object):
         font5 = QFont()
         font5.setFamilies([u"Segoe UI"])
         font5.setPointSize(13)
-        font5.setBold(True)
+        font5.setBold(False)
         font5.setItalic(False)
         self.ToggleBotton_6.setFont(font5)
         self.ToggleBotton_6.setCursor(QCursor(Qt.ArrowCursor))
@@ -890,16 +891,8 @@ class Ui_MainWindow(object):
 "padding-left: 40px;\n"
 "padding-bottom: 2px;\n"
 "color: rgb(255, 255, 255);\n"
-"font: 700 13pt \"Segoe UI\";\n"
+"font: 600 12pt \"Segoe UI\";\n"
 "}")
-        icon1 = QIcon()
-        iconThemeName = u"zoom-out"
-        if QIcon.hasThemeIcon(iconThemeName):
-            icon1 = QIcon.fromTheme(iconThemeName)
-        else:
-            icon1.addFile(u".", QSize(), QIcon.Normal, QIcon.Off)
-
-        self.ToggleBotton_6.setIcon(icon1)
         self.ToggleBotton_6.setAutoDefault(False)
         self.ToggleBotton_6.setFlat(False)
 
@@ -907,20 +900,20 @@ class Ui_MainWindow(object):
 
         self.model_box = QComboBox(self.Model_QF_2)
         self.model_box.setObjectName(u"model_box")
-        self.model_box.setMinimumSize(QSize(170, 20))
-        self.model_box.setMaximumSize(QSize(170, 20))
+        self.model_box.setMinimumSize(QSize(170, 25))
+        self.model_box.setMaximumSize(QSize(170, 25))
         self.model_box.setStyleSheet(u"\n"
 "QComboBox {\n"
-"            background-color: rgba(255,255,255,90);\n"
-"			color: rgba(0, 0, 0, 200);\n"
-"			font: 600 9pt \"Segoe UI\";\n"
-"            border: 1px solid lightgray;\n"
+"            background-color: rgb(255,255,255);\n"
+"			color: rgb(0, 0, 0);\n"
+"			font: 600 10pt \"Segoe UI\";\n"
+"            border: 0px solid lightgray;\n"
 "            border-radius: 10px;\n"
 "            padding-left: 15px;\n"
 "        }\n"
 "        \n"
 "        QComboBox:on {\n"
-"            border: 1px solid #63acfb;\n"
+"            border: 0px solid #63acfb;\n"
 "        }\n"
 "\n"
 "        QComboBox::drop-down {\n"
@@ -944,22 +937,22 @@ class Ui_MainWindow(object):
 "            image: url(:/all/img/box_up.png);\n"
 "        }\n"
 "\n"
-"        QComboBox QAbstractI"
-                        "temView {\n"
+"        QComboBox QAbstractItemView {"
+                        "\n"
 "            border: none;\n"
 "            outline: none;\n"
 "			padding: 10px;\n"
-"            background-color: rgb(223, 188, 220);\n"
+"            background-color: rgba(250, 227, 217,0.5);\n"
 "        }\n"
 "\n"
 "\n"
 "        QComboBox QScrollBar:vertical {\n"
 "            width: 2px;\n"
-"           background-color: rgba(255,255,255,150);\n"
+"           background-color: rgb(255,255,255);\n"
 "        }\n"
 "\n"
 "        QComboBox QScrollBar::handle:vertical {\n"
-"            background-color: rgba(255,255,255,90);\n"
+"            background-color: rgb(255,255,255);\n"
 "        }")
         self.model_box.setInsertPolicy(QComboBox.NoInsert)
         self.model_box.setMinimumContentsLength(0)
@@ -1003,9 +996,8 @@ class Ui_MainWindow(object):
 "padding-left: 40px;\n"
 "padding-bottom: 4px;\n"
 "color: rgb(255, 255, 255);\n"
-"font: 700 13pt \"Segoe UI\";\n"
+"font: 600 12pt \"Segoe UI\";\n"
 "}")
-        self.ToggleBotton_2.setIcon(icon1)
         self.ToggleBotton_2.setAutoDefault(False)
         self.ToggleBotton_2.setFlat(False)
 
@@ -1027,13 +1019,13 @@ class Ui_MainWindow(object):
         self.iou_spinbox.setStyleSheet(u"QDoubleSpinBox {\n"
 "border: 0px solid lightgray;\n"
 "border-radius: 2px;\n"
-"background-color: rgba(255,255,255,90);\n"
-"font: 600 9pt \"Segoe UI\";\n"
+"background-color: rgb(255,255,255);\n"
+"font: 600 10pt \"Segoe UI\";\n"
 "}\n"
 "        \n"
 "QDoubleSpinBox::up-button {\n"
 "width: 10px;\n"
-"height: 9px;\n"
+"height: 10px;\n"
 "margin: 0px 3px 0px 0px;\n"
 "border-image: url(:/all/img/box_up.png);\n"
 "}\n"
@@ -1043,7 +1035,7 @@ class Ui_MainWindow(object):
 "            \n"
 "QDoubleSpinBox::down-button {\n"
 "width: 10px;\n"
-"height: 9px;\n"
+"height: 10px;\n"
 "margin: 0px 3px 0px 0px;\n"
 "border-image: url(:/all/img/box_down.png);\n"
 "}\n"
@@ -1063,7 +1055,7 @@ class Ui_MainWindow(object):
         self.iou_slider.setStyleSheet(u"QSlider::groove:horizontal {\n"
 "border: none;\n"
 "height: 10px;\n"
-"background-color: rgba(255,255,255,90);\n"
+"background-color: rgb(255,255,255);\n"
 "border-radius: 5px;\n"
 "}\n"
 "\n"
@@ -1075,7 +1067,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QSlider::sub-page:horizontal {\n"
-"background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #59969b, stop:1 #04e7fa);\n"
+"background-color:rgb(97, 192, 191);\n"
 "border-radius: 5px;\n"
 "}")
         self.iou_slider.setMinimum(1)
@@ -1107,7 +1099,12 @@ class Ui_MainWindow(object):
         self.ToggleBotton_3.setSizePolicy(sizePolicy1)
         self.ToggleBotton_3.setMinimumSize(QSize(0, 30))
         self.ToggleBotton_3.setMaximumSize(QSize(16777215, 30))
-        self.ToggleBotton_3.setFont(font5)
+        font6 = QFont()
+        font6.setFamilies([u"Segoe UI"])
+        font6.setPointSize(13)
+        font6.setBold(True)
+        font6.setItalic(False)
+        self.ToggleBotton_3.setFont(font6)
         self.ToggleBotton_3.setCursor(QCursor(Qt.ArrowCursor))
         self.ToggleBotton_3.setMouseTracking(True)
         self.ToggleBotton_3.setFocusPolicy(Qt.StrongFocus)
@@ -1125,9 +1122,8 @@ class Ui_MainWindow(object):
 "padding-left: 40px;\n"
 "padding-bottom: 4px;\n"
 "color: rgb(255, 255, 255);\n"
-"font: 700 13pt \"Segoe UI\";\n"
+"font: 600 12pt \"Segoe UI\";\n"
 "}")
-        self.ToggleBotton_3.setIcon(icon1)
         self.ToggleBotton_3.setAutoDefault(False)
         self.ToggleBotton_3.setFlat(False)
 
@@ -1149,13 +1145,13 @@ class Ui_MainWindow(object):
         self.conf_spinbox.setStyleSheet(u"QDoubleSpinBox {\n"
 "border: 0px solid lightgray;\n"
 "border-radius: 2px;\n"
-"background-color: rgba(255,255,255,90);\n"
-"font: 600 9pt \"Segoe UI\";\n"
+"background-color: rgb(255,255,255);\n"
+"font: 600 10pt \"Segoe UI\";\n"
 "}\n"
 "        \n"
 "QDoubleSpinBox::up-button {\n"
 "width: 10px;\n"
-"height: 9px;\n"
+"height: 10px;\n"
 "margin: 0px 3px 0px 0px;\n"
 "border-image: url(:/all/img/box_up.png);\n"
 "}\n"
@@ -1165,7 +1161,7 @@ class Ui_MainWindow(object):
 "            \n"
 "QDoubleSpinBox::down-button {\n"
 "width: 10px;\n"
-"height: 9px;\n"
+"height: 10px;\n"
 "margin: 0px 3px 0px 0px;\n"
 "border-image: url(:/all/img/box_down.png);\n"
 "}\n"
@@ -1185,7 +1181,7 @@ class Ui_MainWindow(object):
         self.conf_slider.setStyleSheet(u"QSlider::groove:horizontal {\n"
 "border: none;\n"
 "height: 10px;\n"
-"background-color: rgba(255,255,255,90);\n"
+"background-color: rgb(255,255,255);\n"
 "border-radius: 5px;\n"
 "}\n"
 "\n"
@@ -1197,7 +1193,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QSlider::sub-page:horizontal {\n"
-"background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #59969b, stop:1 #04e7fa);\n"
+"background-color: rgb(97, 192, 191);\n"
 "border-radius: 5px;\n"
 "}")
         self.conf_slider.setMinimum(1)
@@ -1229,7 +1225,7 @@ class Ui_MainWindow(object):
         self.ToggleBotton_4.setSizePolicy(sizePolicy1)
         self.ToggleBotton_4.setMinimumSize(QSize(0, 30))
         self.ToggleBotton_4.setMaximumSize(QSize(16777215, 30))
-        self.ToggleBotton_4.setFont(font5)
+        self.ToggleBotton_4.setFont(font6)
         self.ToggleBotton_4.setCursor(QCursor(Qt.ArrowCursor))
         self.ToggleBotton_4.setMouseTracking(True)
         self.ToggleBotton_4.setFocusPolicy(Qt.StrongFocus)
@@ -1247,9 +1243,8 @@ class Ui_MainWindow(object):
 "padding-left: 40px;\n"
 "padding-bottom: 2px;\n"
 "color: rgb(255, 255, 255);\n"
-"font: 700 13pt \"Segoe UI\";\n"
+"font: 600 12pt \"Segoe UI\";\n"
 "}")
-        self.ToggleBotton_4.setIcon(icon1)
         self.ToggleBotton_4.setAutoDefault(False)
         self.ToggleBotton_4.setFlat(False)
 
@@ -1270,13 +1265,13 @@ class Ui_MainWindow(object):
         self.speed_spinbox.setStyleSheet(u"QSpinBox {\n"
 "border: 0px solid lightgray;\n"
 "border-radius: 2px;\n"
-"background-color: rgba(255,255,255,90);\n"
-"font: 600 9pt \"Segoe UI\";\n"
+"background-color: rgb(255,255,255);\n"
+"font: 600 10pt \"Segoe UI\";\n"
 "}\n"
 "        \n"
 "QSpinBox::up-button {\n"
 "width: 10px;\n"
-"height: 9px;\n"
+"height: 10px;\n"
 "margin: 0px 3px 0px 0px;\n"
 "border-image: url(:/all/img/box_up.png);\n"
 "}\n"
@@ -1286,7 +1281,7 @@ class Ui_MainWindow(object):
 "            \n"
 "QSpinBox::down-button {\n"
 "width: 10px;\n"
-"height: 9px;\n"
+"height: 10px;\n"
 "margin: 0px 3px 0px 0px;\n"
 "border-image: url(:/all/img/box_down.png);\n"
 "}\n"
@@ -1304,7 +1299,7 @@ class Ui_MainWindow(object):
         self.speed_slider.setStyleSheet(u"QSlider::groove:horizontal {\n"
 "border: none;\n"
 "height: 10px;\n"
-"background-color: rgba(255,255,255,90);\n"
+"background-color: rgb(255,255,255);\n"
 "border-radius: 5px;\n"
 "}\n"
 "\n"
@@ -1316,7 +1311,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QSlider::sub-page:horizontal {\n"
-"background-color: qradialgradient(cx:0, cy:0, radius:1, fx:0.1, fy:0.1, stop:0 rgb(253, 139, 133),  stop:1 rgb(248, 194, 152));\n"
+"background-color: rgb(97, 192, 191);\n"
 "border-radius: 5px;\n"
 "}")
         self.speed_slider.setMaximum(50)
@@ -1348,7 +1343,7 @@ class Ui_MainWindow(object):
         self.ToggleBotton_5.setSizePolicy(sizePolicy1)
         self.ToggleBotton_5.setMinimumSize(QSize(0, 30))
         self.ToggleBotton_5.setMaximumSize(QSize(16777215, 30))
-        self.ToggleBotton_5.setFont(font5)
+        self.ToggleBotton_5.setFont(font6)
         self.ToggleBotton_5.setCursor(QCursor(Qt.ArrowCursor))
         self.ToggleBotton_5.setMouseTracking(True)
         self.ToggleBotton_5.setFocusPolicy(Qt.StrongFocus)
@@ -1366,9 +1361,8 @@ class Ui_MainWindow(object):
 "padding-left: 40px;\n"
 "padding-bottom: 2px;\n"
 "color: rgb(255, 255, 255);\n"
-"font: 700 13pt \"Segoe UI\";\n"
+"font: 600 12pt \"Segoe UI\";\n"
 "}")
-        self.ToggleBotton_5.setIcon(icon1)
         self.ToggleBotton_5.setAutoDefault(False)
         self.ToggleBotton_5.setFlat(False)
 
@@ -1379,7 +1373,7 @@ class Ui_MainWindow(object):
         self.save_res_button.setCursor(QCursor(Qt.PointingHandCursor))
         self.save_res_button.setStyleSheet(u"QCheckBox {\n"
 "color: rgb(255, 255, 255);\n"
-"font: 590 10pt \"Segoe UI\";\n"
+"font: 600 10pt \"Segoe UI\";\n"
 "        }\n"
 "\n"
 "        QCheckBox::indicator {\n"
@@ -1405,7 +1399,7 @@ class Ui_MainWindow(object):
         self.save_txt_button.setCursor(QCursor(Qt.PointingHandCursor))
         self.save_txt_button.setStyleSheet(u"QCheckBox {\n"
 "color: rgb(255, 255, 255);\n"
-"font: 590 10pt \"Segoe UI\";\n"
+"font: 600 10pt \"Segoe UI\";\n"
 "        }\n"
 "\n"
 "        QCheckBox::indicator {\n"
@@ -1449,8 +1443,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_13.setContentsMargins(20, 2, 0, 4)
         self.status_bar = QLabel(self.below)
         self.status_bar.setObjectName(u"status_bar")
-        self.status_bar.setStyleSheet(u"font: 700 11pt \"Segoe UI\";\n"
-"color: rgba(0, 0, 0, 140);")
+        self.status_bar.setStyleSheet(u"font: 600 10pt \"Segoe UI\";\n"
+"color: rgb(0, 0, 0);")
 
         self.horizontalLayout_13.addWidget(self.status_bar)
 
@@ -1511,10 +1505,10 @@ class Ui_MainWindow(object):
         self.ToggleBotton_6.setText(QCoreApplication.translate("MainWindow", u"Model", None))
         self.model_box.setPlaceholderText("")
         self.ToggleBotton_2.setText(QCoreApplication.translate("MainWindow", u"IOU", None))
-        self.ToggleBotton_3.setText(QCoreApplication.translate("MainWindow", u"Conf", None))
-        self.ToggleBotton_4.setText(QCoreApplication.translate("MainWindow", u"Delay(ms)", None))
+        self.ToggleBotton_3.setText(QCoreApplication.translate("MainWindow", u"Confidence", None))
+        self.ToggleBotton_4.setText(QCoreApplication.translate("MainWindow", u"Delay", None))
         self.ToggleBotton_5.setText(QCoreApplication.translate("MainWindow", u"Save", None))
-        self.save_res_button.setText(QCoreApplication.translate("MainWindow", u"Save MP4/JPG", None))
-        self.save_txt_button.setText(QCoreApplication.translate("MainWindow", u"Save Labels(.txt)", None))
+        self.save_res_button.setText(QCoreApplication.translate("MainWindow", u"Save MP4 and JPG", None))
+        self.save_txt_button.setText(QCoreApplication.translate("MainWindow", u"Save Labels.txt", None))
     # retranslateUi
 

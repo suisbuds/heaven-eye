@@ -465,7 +465,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         try:
             self.stop()
             MessageBox(
-                self.close_button, title='Note', text='loading camera...', time=2000, auto=True).exec()
+                self.close_button, title='Note', text='Loading camera', time=2000, auto=True).exec()
             # get the number of local cameras
             _, cams = Camera().get_cam_num()
             popMenu = QMenu()
@@ -539,19 +539,19 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     # Save test result button--picture/video
     def is_save_res(self):
         if self.save_res_button.checkState() == Qt.CheckState.Unchecked:
-            self.show_status('NOTE: Image results wont be saved')
+            self.show_status('Image results wont be saved')
             self.yolo_predict.save_res = False
         elif self.save_res_button.checkState() == Qt.CheckState.Checked:
-            self.show_status('NOTE: Image results will be saved')
+            self.show_status('Image results will be saved')
             self.yolo_predict.save_res = True
     
     # Save test result button -- label (txt)
     def is_save_txt(self):
         if self.save_txt_button.checkState() == Qt.CheckState.Unchecked:
-            self.show_status('NOTE: Label results wont be saved')
+            self.show_status('Label results wont be saved')
             self.yolo_predict.save_txt = False
         elif self.save_txt_button.checkState() == Qt.CheckState.Checked:
-            self.show_status('NOTE: Label results will be saved')
+            self.show_status('Label results will be saved')
             self.yolo_predict.save_txt = True
 
     # Configuration initialization  ~~~wait to change~~~
@@ -685,7 +685,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.yolo_predict.stop_dtc = True
             self.yolo_thread.quit()
             MessageBox(
-                self.close_button, title='Note', text='Exiting, please wait...', time=3000, auto=True).exec()
+                self.close_button, title='Note', text='Exiting', time=3000, auto=True).exec()
             sys.exit(0)
         else:
             sys.exit(0)
